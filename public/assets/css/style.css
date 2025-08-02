@@ -1,0 +1,323 @@
+/* Paleta de Colores */
+:root {
+    --mysecret-dark-bg: #1A1A1A; /* Negro Profundo / Gris Oscuro */
+    --mysecret-dark-secondary-bg: #282828; /* Un poco más claro para contraste */
+    --mysecret-gold: #B8860B;   /* Oro Viejo / Bronce Sutil */
+    --mysecret-purple: #4B0082; /* Malva Oscuro / Morado Profundo */
+    --mysecret-light-text: #F5F5F5; /* Gris Claro / Blanco Roto para texto */
+    --mysecret-medium-gray: #808080; /* Gris Medio para texto secundario/bordes */
+    --mysecret-success: #2ECC71; /* Verde Esmeralda */
+    --mysecret-error: #C0392B;   /* Rojo Oscuro */
+    --mysecret-link: #3498DB;    /* Azul Suave */
+}
+
+/* Base Body Styles */
+body {
+    background-color: var(--mysecret-dark-bg);
+    color: var(--mysecret-light-text);
+    font-family: 'Lato', sans-serif; /* Fuente de cuerpo */
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.mysecret-logo-img {
+    width: 60px; 
+    border-radius: 12px;
+}
+
+/* Typography - Playfair Display for Headings, Lato for Body */
+.mysecret-logo,
+.mysecret-title,
+.mysecret-section-title,
+.mysecret-card-title {
+    font-family: 'Playfair Display', serif; /* Fuente de encabezado */
+    font-weight: 700;
+}
+
+.mysecret-logo {
+    font-size: 2rem;
+    color: var(--mysecret-gold) !important; /* Asegura el color dorado */
+    text-shadow: 0 0 8px rgba(184, 134, 11, 0.4); /* Sutil brillo dorado */
+}
+
+.mysecret-title {
+    color: var(--mysecret-light-text);
+    font-size: 3.5rem; /* Tamaño grande para el título principal */
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para resaltar */
+}
+
+.mysecret-subtitle {
+    color: var(--mysecret-medium-gray);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.mysecret-section-title {
+    color: var(--mysecret-gold);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.mysecret-section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--mysecret-gold);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Card Titles (smaller) */
+.mysecret-card-title {
+    color: var(--mysecret-gold);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mysecret-card-title-small {
+    color: var(--mysecret-light-text);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+/* Body Text */
+.mysecret-card-text,
+.mysecret-card-text-small {
+    font-family: 'Lato', sans-serif;
+    color: var(--mysecret-medium-gray);
+    font-weight: 300;
+}
+
+.mysecret-card-text-small {
+    font-size: 0.9rem;
+}
+
+/* Spacing and Layout - Using Bootstrap's utility classes for much of it */
+.container {
+    max-width: 1200px; /* Limita el ancho del contenido para un aspecto premium */
+}
+
+/* Navbar */
+.mysecret-navbar {
+    background-color: var(--mysecret-dark-secondary-bg); /* Un tono más claro que el fondo */
+    border-bottom: 1px solid rgba(184, 134, 11, 0.2); /* Borde sutil dorado */
+}
+
+.mysecret-nav-link {
+    color: var(--mysecret-light-text) !important;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mysecret-nav-link:hover,
+.mysecret-nav-link.active {
+    color: var(--mysecret-gold) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border-color: rgba(184, 134, 11, 0.5) !important;
+}
+
+.mysecret-gold {
+    color: var(--mysecret-gold); /* Para los iconos del toggler */
+}
+
+/* Hero Section */
+.mysecret-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--mysecret-dark-bg)), url('https://via.placeholder.com/1600x600/1A1A1A/808080?text=MySecret+Background') no-repeat center center / cover;
+    min-height: 60vh;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden; /* Asegura que el gradiente ocupe todo el espacio */
+}
+
+/* Cards */
+.mysecret-card {
+    background-color: var(--mysecret-dark-secondary-bg);
+    border: 1px solid rgba(184, 134, 11, 0.1); /* Borde sutil */
+    border-radius: 0.75rem; /* Bordes ligeramente redondeados */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mysecret-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 20px rgba(184, 134, 11, 0.2);
+}
+
+.mysecret-card-img {
+    height: 200px; /* Altura fija para las imágenes de la tarjeta */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    border-bottom: 1px solid rgba(184, 134, 11, 0.1);
+}
+
+/* Buttons (CTAs) */
+.mysecret-btn-primary {
+    background-color: var(--mysecret-gold);
+    border-color: var(--mysecret-gold);
+    color: var(--mysecret-dark-bg); /* Texto oscuro sobre el botón dorado */
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.mysecret-btn-primary:hover {
+    background-color: #CD7F32; /* Tono de oro/bronce más claro al pasar el ratón */
+    border-color: #CD7F32;
+    transform: translateY(-2px);
+    color: var(--mysecret-dark-bg);
+}
+
+.mysecret-btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--mysecret-purple); /* Borde malva */
+    color: var(--mysecret-purple);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mysecret-btn-outline:hover {
+    background-color: var(--mysecret-purple);
+    color: var(--mysecret-light-text);
+    border-color: var(--mysecret-purple);
+}
+
+.mysecret-cta-link {
+    /* Estilos específicos para el botón en la navbar */
+    background-color: var(--mysecret-gold) !important;
+    color: var(--mysecret-dark-bg) !important;
+    border: none !important;
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 0.3rem !important;
+    font-weight: 600 !important;
+}
+
+.mysecret-cta-link:hover {
+    background-color: #CD7F32 !important;
+    color: var(--mysecret-dark-bg) !important;
+    transform: translateY(-1px);
+}
+
+/* Form Specific Styles */
+.mysecret-form-label {
+    color: var(--mysecret-gold); /* Etiquetas doradas */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.mysecret-form-control {
+    background-color: var(--mysecret-dark-bg); /* Fondo oscuro para los inputs */
+    border: 1px solid rgba(184, 134, 11, 0.3); /* Borde sutil dorado */
+    color: var(--mysecret-light-text); /* Texto claro en los inputs */
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mysecret-form-control:focus {
+    background-color: var(--mysecret-dark-bg); /* Mantiene el fondo oscuro al enfocar */
+    color: var(--mysecret-light-text);
+    border-color: var(--mysecret-gold); /* Borde dorado al enfocar */
+    box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25); /* Sombra suave dorada */
+}
+
+.mysecret-checkbox .form-check-input:checked {
+    background-color: var(--mysecret-gold);
+    border-color: var(--mysecret-gold);
+}
+
+.mysecret-checkbox .form-check-input {
+    border: 1px solid var(--mysecret-medium-gray);
+}
+
+.mysecret-link-text {
+    color: var(--mysecret-purple); /* Enlaces dentro del formulario */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mysecret-link-text:hover {
+    color: var(--mysecret-gold);
+    text-decoration: underline;
+}
+
+/* Dividers */
+.mysecret-divider {
+    border-color: rgba(184, 134, 11, 0.3);
+    opacity: 0.5;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Icons */
+.fa-crown {
+    color: var(--mysecret-gold);
+}
+
+.fa-lock {
+    color: var(--mysecret-purple);
+}
+
+/* Footer */
+.mysecret-footer {
+    background-color: var(--mysecret-dark-secondary-bg);
+    color: var(--mysecret-medium-gray);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(184, 134, 11, 0.1);
+}
+
+.mysecret-footer-link {
+    color: var(--mysecret-medium-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mysecret-footer-link:hover {
+    color: var(--mysecret-gold);
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991.98px) { /* Medium devices and below */
+    .mysecret-logo {
+        font-size: 1.8rem;
+    }
+    .mysecret-title {
+        font-size: 2.5rem;
+    }
+    .mysecret-subtitle {
+        font-size: 1.1rem;
+    }
+    .mysecret-navbar .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(184, 134, 11, 0.2);
+        margin-top: 1rem;
+    }
+    .mysecret-navbar .navbar-toggler {
+        margin-left: auto; /* Empuja el toggler a la derecha */
+    }
+}
+
+@media (max-width: 767.98px) { /* Small devices and below */
+    .mysecret-title {
+        font-size: 2rem;
+    }
+    .mysecret-section-title {
+        font-size: 2rem;
+    }
+    .mysecret-hero {
+        min-height: 50vh;
+        padding: 60px 0;
+    }
+}
