@@ -98,6 +98,9 @@
             box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
             color: white;
         }
+        .form-check-label {
+            color: white;
+        }
     </style>
 </head>
 <body translate="yes">
