@@ -1,3 +1,13 @@
+<?php
+session_start();
+// La ruta a tu página de inicio de sesión, ajusta si es necesario
+$login_page_url = '../../../public/sign_in.php'; 
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: " . $login_page_url);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -99,6 +109,19 @@
             box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
             color: white;
         }
+        /* Clase para el botón de like cuando está activo */
+        .btn-like-active {
+            background-color: #ffd700; /* Color dorado */
+            border-color: #ffd700;
+         color: #343a40; /* Color del texto para contrastar */
+        }
+
+        /* Opcional: Estilo al pasar el mouse por encima */
+        .btn-like-active:hover {
+            background-color: #e6c200; /* Un tono un poco más oscuro */
+            border-color: #e6c200;
+            color: #343a40;
+        }
     </style>
 </head>
 <body translate="yes">
@@ -129,7 +152,7 @@
                         <a class="nav-link mysecret-nav-link" href="fan_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-box-arrow-right me-2"></i>Log out</a>
+                        <a class="nav-link mysecret-nav-link" href="../../processes/log_out.php"><i class="bi bi-box-arrow-right me-2"></i>Log out</a>
                     </li>
                     <li class="nav-item ms-lg-3">
                         <a href="fan_profile.php">
@@ -175,7 +198,10 @@
                             <p class="card-text mysecret-card-text small">Por: Sophie Rain <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
                             <p class="card-text">¡Mira lo que pasa detrás de cámaras en mi último proyecto!</p>
                              <div class="d-flex justify-content-between align-items-center">
-                                <a href="view_post.php?id=124" class="btn mysecret-btn-outline"><i class="bi bi-play-circle-fill me-2"></i>Ver Video</a>
+                                <button class="btn mysecret-btn-outline view-content-btn" data-bs-toggle="modal" data-bs-target="#contentModal" data-content-id="124">
+                                    <i class="bi bi-play-circle-fill me-2"></i>ver video
+                                </button>
+                                <!--<a href="view_post.php?id=124" class="btn mysecret-btn-outline"><i class="bi bi-play-circle-fill me-2"></i>Ver Video</a>-->
                                 <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 210 <i class="bi bi-chat-fill ms-3 me-1"></i> 38</small>
                             </div>
                         </div>
@@ -298,5 +324,32 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content mysecret-card">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contentModalLabel">Título del Contenido</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="content-placeholder">
+                    <p class="text-muted">Cargando contenido...</p>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <button id="likeBtn" class="btn mysecret-btn-outline me-2">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                        <span class="ms-2">Me gusta</span>
+                    </button>
+                    <span id="likeCount" class="text-white-50 small">0 Likes</span>
+                </div>
+                <button type="button" class="btn mysecret-btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

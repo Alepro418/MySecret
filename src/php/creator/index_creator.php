@@ -1,4 +1,13 @@
-<!-- Index file for the creators of content -->
+<?php
+session_start();
+// La ruta a tu página de inicio de sesión, ajusta si es necesario
+$login_page_url = '../../../public/sign_in.php'; 
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: " . $login_page_url);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,7 +164,7 @@
                         <a class="nav-link mysecret-nav-link" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-person-x-fill me-2"></i>Log out</a>
+                        <a class="nav-link mysecret-nav-link" href="../../processes/log_out.php"><i class="bi bi-person-x-fill me-2"></i>Log out</a>
                     </li>
                     <li class="nav-item ms-lg-3">
                         <a href="creator_profile.php">

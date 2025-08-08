@@ -1,4 +1,4 @@
-<?php
+<<?php
 
 // Start a session to store messages (optional, but good for user feedback)
 session_start();

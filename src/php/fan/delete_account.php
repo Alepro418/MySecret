@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Opciones de Cuenta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../public/assets/css/style.css">
     <style>
+        /* Estilos CSS (sin cambios importantes, se asume que los estilos ya son funcionales) */
         a {
             text-decoration: none;
         }
-        /* Custom styles from original profile - you can move these to style.css if preferred */
         .mysecret-profile-header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Assets/profile_banner_placeholder.jpg') no-repeat center center/cover; /* Placeholder banner */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Assets/profile_banner_placeholder.jpg') no-repeat center center/cover;
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -27,9 +27,9 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            border: 0.5px solid #ffc107; /* Gold border */
+            border: 0.5px solid #ffc107;
             object-fit: cover;
-            margin-top: -5px; /* Pulls avatar up into banner */
+            margin-top: -5px;
             position: relative;
             z-index: 10;
             cursor: pointer;
@@ -38,14 +38,14 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            border: 0.5px solid #ffc107; /* Gold border */
+            border: 0.5px solid #ffc107;
             object-fit: cover;
-            margin-top: -5px; /* Pulls avatar up into banner */
+            margin-top: -5px;
             position: relative;
             z-index: 10;
         }
         .mysecret-stat-card {
-            background-color: #212529; /* Darker background for stats */
+            background-color: #212529;
             color: white;
             padding: 20px;
             border-radius: 8px;
@@ -53,7 +53,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
         .mysecret-stat-card h3 {
-            color: #ffc107; /* Gold color for stats */
+            color: #ffc107;
             font-weight: 700;
         }
         .mysecret-content-grid .card {
@@ -72,7 +72,7 @@
         .mysecret-section-title-profile {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
-            color: #ffc107; /* Gold color for titles */
+            color: #ffc107;
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -101,28 +101,24 @@
             box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
             color: white;
         }
-
-        /* New styles for messages section */
         .mysecret-message-item {
-            background-color: #2d3135; /* Slightly lighter dark background for messages */
-            border: 1px solid #495057; /* A subtle border */
+            background-color: #2d3135;
+            border: 1px solid #495057;
             border-radius: 8px;
-            margin-bottom: 15px; /* Space between messages */
+            margin-bottom: 15px;
             padding: 15px 20px;
             transition: background-color 0.3s ease;
         }
         .mysecret-message-item:hover {
-            background-color: #343a40; /* Darker on hover */
+            background-color: #343a40;
         }
         .mysecret-message-item .mysecret-gold {
             color: #ffc107;
             font-weight: 700;
         }
         .mysecret-message-item .opacity-75 {
-            color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for message text */
+            color: rgba(255, 255, 255, 0.9);
         }
-
-        /* Styles for followed creators list */
         .mysecret-creator-list .list-group-item {
             background-color: #2d3135;
             color: white;
@@ -148,15 +144,13 @@
             font-weight: bold;
         }
         .mysecret-membership-active {
-            background-color: #28a745; /* Green */
+            background-color: #28a745;
             color: white;
         }
         .mysecret-membership-expired {
-            background-color: #dc3545; /* Red */
+            background-color: #dc3545;
             color: white;
         }
-
-        /* Styles for account settings cards */
         .mysecret-setting-card {
             background-color: #212529;
             color: white;
@@ -181,8 +175,6 @@
         .mysecret-setting-card p {
             color: #ccc;
         }
-
-        /* Specific styles for Delete Account page */
         .mysecret-delete-account-card {
             background-color: #212529;
             color: white;
@@ -194,7 +186,7 @@
             margin: 0 auto;
         }
         .mysecret-delete-account-card h2 {
-            color: #dc3545; /* Red for warning */
+            color: #dc3545;
             margin-bottom: 25px;
             font-family: 'Playfair Display', serif;
         }
@@ -207,17 +199,21 @@
         .mysecret-delete-account-card .form-check-label {
             color: #e0e0e0;
         }
-        .mysecret-delete-account-card .btn { /* General button style for consistency */
+        .mysecret-delete-account-card .btn {
             font-size: 1.1rem;
             padding: 12px 30px;
-            margin: 10px 10px; /* Adjust margin for spacing between buttons */
+            margin: 10px 10px;
         }
         .mysecret-delete-account-card .btn-danger {
-            margin-top: 20px; /* Only apply margin top for the danger button specifically */
+            margin-top: 20px;
         }
         .mysecret-delete-account-card .alert {
             margin-top: 30px;
             text-align: left;
+        }
+        /* Nuevo estilo para el spinner, para que se vea bien en el botón */
+        .mysecret-btn-spinner {
+            display: none; /* Oculto por defecto */
         }
     </style>
 </head>
@@ -263,7 +259,7 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Eliminar o Suspender Mi Cuenta</h1>
+            <h1 class="display-3 mysecret-title">Opciones de Cuenta</h1>
             <p class="lead mysecret-subtitle">Administra el estado de tu cuenta de MySecret.</p>
         </div>
     </header>
@@ -271,20 +267,21 @@
     <main class="container my-5 py-3">
         <div class="mysecret-delete-account-card">
             <i class="bi bi-person-x-fill display-1 text-danger mb-4"></i>
-            <h2>Opciones de Cuenta</h2>
+            <h2>Administrar tu Cuenta</h2>
             <p>Aquí puedes elegir entre **suspender temporalmente** tu cuenta o **eliminarla permanentemente**. Por favor, lee cuidadosamente las implicaciones de cada opción.</p>
 
             <hr class="my-5 mysecret-divider">
 
-            <h3 class="mysecret-gold mb-3"><i class="bi bi-pause-circle-fill me-2"></i>Suspender Cuenta Temporalmente</h3>
+            <h3 class="mysecret-gold mb-3"><i class="bi bi-pause-circle-fill me-2"></i>Suspender Cuenta</h3>
             <p class="mb-4">Si solo necesitas un descanso, puedes suspender tu cuenta. Tu perfil, publicaciones y contenido no serán visibles para otros usuarios, y no recibirás notificaciones. Podrás reactivar tu cuenta en cualquier momento volviendo a iniciar sesión.</p>
-            <button class="btn mysecret-btn-outline" onclick="suspendAccount()">
-                <i class="bi bi-pause-fill me-2"></i> Suspender Cuenta
+            <button class="btn mysecret-btn-outline" id="suspendAccountBtn">
+                <span class="mysecret-btn-text"><i class="bi bi-pause-fill me-2"></i> Suspender Cuenta</span>
+                <span class="spinner-border spinner-border-sm mysecret-btn-spinner" role="status" aria-hidden="true"></span>
             </button>
 
             <hr class="my-5 mysecret-divider">
 
-            <h3 class="mysecret-gold mb-3 text-danger"><i class="bi bi-trash-fill me-2"></i>Eliminar Cuenta Permanentemente</h3>
+            <h3 class="mysecret-gold mb-3 text-danger"><i class="bi bi-trash-fill me-2"></i>Eliminar Cuenta</h3>
             <p>La eliminación de tu cuenta en MySecret es una acción **permanente e irreversible**. Una vez que tu cuenta sea eliminada, perderás acceso a:</p>
             <ul>
                 <li>Todas tus publicaciones y contenido.</li>
@@ -301,15 +298,51 @@
                 </label>
             </div>
 
-            <button class="btn btn-danger" id="deleteAccountBtn" onclick="confirmAndDelete()">
-                <i class="bi bi-trash-fill me-2"></i> Eliminar Mi Cuenta Permanentemente
+            <button class="btn btn-danger" id="deleteAccountBtn">
+                <span class="mysecret-btn-text"><i class="bi bi-trash-fill me-2"></i> Eliminar Mi Cuenta Permanentemente</span>
+                <span class="spinner-border spinner-border-sm mysecret-btn-spinner" role="status" aria-hidden="true"></span>
             </button>
-
             <div class="alert alert-warning mt-4" role="alert" id="deleteWarning" style="display: none;">
                 <strong>¡Advertencia!</strong> Debes marcar la casilla de confirmación para poder eliminar tu cuenta.
             </div>
         </div>
     </main>
+
+    <div class="modal fade" id="suspendModal" tabindex="-1" aria-labelledby="suspendModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="suspendModalLabel">Confirmar Suspensión</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que quieres **suspender temporalmente** tu cuenta? Tu perfil dejará de ser visible, pero podrás reactivarlo en cualquier momento.
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning" id="confirmSuspendBtn">Suspender Cuenta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-danger" id="deleteModalLabel">¡Advertencia! Eliminación Permanente</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Estás a punto de **eliminar permanentemente** tu cuenta. Esta acción es **irreversible**. ¿Estás ABSOLUTAMENTE seguro de que quieres proceder?
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Sí, Eliminar Permanentemente</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
@@ -324,83 +357,92 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        function suspendAccount() {
-            if (confirm("¿Estás seguro de que quieres suspender temporalmente tu cuenta? Podrás reactivarla iniciando sesión de nuevo.")) {
-                // Aquí iría la lógica para enviar la solicitud de suspensión al servidor.
-                // Esto probablemente implicaría una llamada AJAX a un script PHP.
-                // Ejemplo:
-                /*
-                fetch('api/suspend_account.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ userId: 'TU_ID_DE_USUARIO' }),
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        alert("Tu cuenta ha sido suspendida exitosamente. ¡Esperamos verte pronto!");
-                        window.location.href = "index.php"; // Redirigir al inicio o página de confirmación
-                    } else {
-                        alert("Hubo un error al suspender tu cuenta: " + data.message);
-                    }
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                    alert("Ocurrió un error de red. Inténtalo de nuevo más tarde.");
-                });
-                */
-                alert("Tu cuenta ha sido suspendida temporalmente. Puedes reactivarla iniciando sesión de nuevo.");
-                window.location.href = "index.php"; // Redirigir al inicio o una página de confirmación
-            }
-        }
-
-        function confirmAndDelete() {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Referencias a los elementos del DOM
+            const suspendBtn = document.getElementById('suspendAccountBtn');
+            const deleteBtn = document.getElementById('deleteAccountBtn');
             const confirmCheckbox = document.getElementById('confirmDelete');
             const deleteWarning = document.getElementById('deleteWarning');
 
-            if (confirmCheckbox.checked) {
-                deleteWarning.style.display = 'none'; // Oculta la advertencia si estaba visible
-                
-                if (confirm("¿Estás ABSOLUTAMENTE seguro de que quieres eliminar tu cuenta? Esta acción es IRREVERSIBLE y perderás todo tu contenido.")) {
-                    // Si el usuario confirma la segunda vez
-                    alert("Tu cuenta ha sido solicitada para eliminación permanente. Este proceso puede tardar un tiempo. Gracias por haber sido parte de MySecret.");
-                    window.location.href = "index.php"; 
-                    
-                    // Ejemplo de cómo podrías hacer una llamada Fetch (requiere backend PHP):
-                    /*
-                    fetch('api/delete_account.php', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ userId: 'TU_ID_DE_USUARIO', confirmation: true }), 
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            alert("Tu cuenta ha sido eliminada exitosamente. Gracias por haber sido parte de MySecret.");
-                            window.location.href = "index.php"; 
-                        } else {
-                            alert("Hubo un error al eliminar tu cuenta: " + data.message);
-                        }
-                    })
-                    .catch((error) => {
-                        console.error('Error:', error);
-                        alert("Ocurrió un error de red. Inténtalo de nuevo más tarde.");
-                    });
-                    */
+            // Modales
+            const suspendModal = new bootstrap.Modal(document.getElementById('suspendModal'));
+            const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+            const confirmSuspendBtn = document.getElementById('confirmSuspendBtn');
+            const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 
+            // Controladores de eventos
+            suspendBtn.addEventListener('click', () => {
+                suspendModal.show();
+            });
+
+            deleteBtn.addEventListener('click', () => {
+                if (!confirmCheckbox.checked) {
+                    deleteWarning.style.display = 'block';
                 } else {
-                    alert("Eliminación de cuenta cancelada.");
+                    deleteWarning.style.display = 'none';
+                    deleteModal.show();
                 }
+            });
 
-            } else {
-                deleteWarning.style.display = 'block';
+            // Función para manejar el estado de los botones durante una acción
+            function setButtonLoadingState(button, isLoading) {
+                const buttonText = button.querySelector('.mysecret-btn-text');
+                const spinner = button.querySelector('.mysecret-btn-spinner');
+                
+                if (isLoading) {
+                    button.disabled = true;
+                    buttonText.style.display = 'none';
+                    spinner.style.display = 'inline-block';
+                } else {
+                    button.disabled = false;
+                    buttonText.style.display = 'inline-block';
+                    spinner.style.display = 'none';
+                }
             }
-        }
+
+            // Lógica de confirmación de suspensión
+            confirmSuspendBtn.addEventListener('click', () => {
+                // Muestra un estado de carga en el botón
+                setButtonLoadingState(confirmSuspendBtn, true);
+
+                // Aquí iría la llamada asíncrona (Fetch) al servidor para suspender la cuenta
+                console.log('Enviando solicitud de suspensión al servidor...');
+                
+                // Simulación de la llamada al servidor
+                setTimeout(() => {
+                    // Simular respuesta exitosa
+                    console.log('Cuenta suspendida con éxito.');
+                    suspendModal.hide(); // Cierra el modal
+                    
+                    // Muestra una alerta de éxito
+                    alert("Tu cuenta ha sido suspendida exitosamente. ¡Esperamos verte pronto!");
+                    
+                    // Redirigir al usuario
+                    window.location.href = "index.php"; 
+                }, 2000); // Espera 2 segundos
+            });
+
+            // Lógica de confirmación de eliminación
+            confirmDeleteBtn.addEventListener('click', () => {
+                setButtonLoadingState(confirmDeleteBtn, true);
+
+                // Aquí iría la llamada asíncrona (Fetch) al servidor para eliminar la cuenta
+                console.log('Enviando solicitud de eliminación al servidor...');
+
+                // Simulación de la llamada al servidor
+                setTimeout(() => {
+                    // Simular respuesta exitosa
+                    console.log('Cuenta eliminada con éxito.');
+                    deleteModal.hide(); // Cierra el modal
+                    
+                    // Muestra una alerta de éxito
+                    alert("Tu cuenta ha sido eliminada permanentemente. Gracias por haber sido parte de MySecret.");
+                    
+                    // Redirigir al usuario
+                    window.location.href = "index.php";
+                }, 2000); // Espera 2 segundos
+            });
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

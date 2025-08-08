@@ -149,7 +149,7 @@
                         <a class="nav-link mysecret-nav-link active" href="fan_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-box-arrow-right me-2"></i>Log out</a>
+                        <a class="nav-link mysecret-nav-link" href="../../processes/log_out.php"><i class="bi bi-person-x-fill me-2"></i>Log out</a>
                     </li>
                     <li class="nav-item">
                         <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar-2 img-fluid">

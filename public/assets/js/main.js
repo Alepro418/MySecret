@@ -288,3 +288,118 @@ new Chart(premiumEarningsCtx, {
         }
     }
 });
+
+// Esperar a que el documento esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    const contentModal = document.getElementById('contentModal');
+    
+    // Escuchar el evento de que el modal se va a mostrar
+    contentModal.addEventListener('show.bs.modal', function (event) {
+        // Obtener el botón que disparó el modal
+        const button = event.relatedTarget;
+        // Extraer el ID del contenido del atributo 'data-content-id'
+        const contentId = button.getAttribute('data-content-id');
+
+        // Referencias a elementos dentro del modal
+        const modalTitle = contentModal.querySelector('.modal-title');
+        const contentPlaceholder = document.getElementById('content-placeholder');
+
+        // Limpiar el contenido anterior y mostrar el mensaje de carga
+        contentPlaceholder.innerHTML = '<p class="text-muted">Cargando contenido...</p>';
+        modalTitle.textContent = 'Cargando...';
+
+        // Realizar la petición fetch al script PHP
+        fetch(`../../processes/fetch_content.php?id_content=${contentId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error en la respuesta del servidor.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    const content = data.data;
+                    modalTitle.textContent = content.title;
+
+                    let contentHtml = '';
+                    switch (content.type_content) {
+                        case 'video':
+                            contentHtml = `<video controls class="img-fluid" src="${content.url_file}"></video>`;
+                            break;
+                        case 'image':
+                            contentHtml = `<img src="${content.url_file}" class="img-fluid" alt="${content.title}">`;
+                            break;
+                        // Añade más casos para otros tipos de contenido si es necesario
+                        default:
+                            contentHtml = `<p>Tipo de contenido no soportado.</p>`;
+                            break;
+                    }
+
+                    contentPlaceholder.innerHTML = contentHtml;
+
+                } else {
+                    modalTitle.textContent = "Error";
+                    contentPlaceholder.innerHTML = `<p class="text-danger">${data.message}</p>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                modalTitle.textContent = "Error";
+                contentPlaceholder.innerHTML = `<p class="text-danger">No se pudo cargar el contenido. Por favor, inténtalo de nuevo.</p>`;
+            });
+    });
+
+    // Escuchar el evento de que el modal se va a ocultar
+    contentModal.addEventListener('hide.bs.modal', function () {
+        const contentPlaceholder = document.getElementById('content-placeholder');
+        // Pausar cualquier video o audio que se esté reproduciendo
+        const media = contentPlaceholder.querySelector('video, audio');
+        if (media) {
+            media.pause();
+            media.currentTime = 0; // Opcional: reiniciar el video
+        }
+    });
+});
+
+// La función para manejar el clic en el botón de Like
+function handleLikeClick(contentId) {
+    const likeBtn = document.getElementById('likeBtn');
+    const likeCountSpan = document.getElementById('likeCount');
+
+    // Deshabilitar el botón para evitar clics múltiples
+    likeBtn.disabled = true;
+
+    const formData = new FormData();
+    formData.append('id_content', contentId);
+
+    fetch('../../processes/proccess_like.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Error en la respuesta del servidor.');
+        return response.json();
+    })
+    .then(data => {
+        if (data.status === 'success') {
+            likeCountSpan.textContent = `${data.total_likes} Likes`;
+            if (data.action === 'inserted') {
+                // Si el like fue insertado, añade la clase de color dorado
+                likeBtn.classList.add('btn-like-active');
+            } else {
+                // Si el like fue eliminado, quita la clase de color dorado
+                likeBtn.classList.remove('btn-like-active');
+            }
+        } else {
+            alert(`Error: ${data.message}`);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Ocurrió un error al procesar el like. Inténtalo de nuevo.');
+    })
+    .finally(() => {
+        // Volver a habilitar el botón
+        likeBtn.disabled = false;
+    });
+}

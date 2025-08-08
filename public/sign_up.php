@@ -43,18 +43,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" aria-current="page" href="index.php"><i class="bi bi-house-door-fill me-2"></i>Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-person-check-fill me-2"></i>Suscripciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-person-circle me-2"></i>Mi Perfil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-envelope-fill me-2"></i>Mensajes</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link mysecret-cta-link btn btn-sm mysecret-btn-primary ms-lg-3" href="sign_in.html"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a>
                     </li>
                 </ul>
@@ -129,6 +117,26 @@
                 </div>
             </div>
         </section>
+
+        <div class="alert">
+            <?php
+                session_start();
+                if (isset($_SESSION['success_message'])) {
+                    echo '<div class="alert alert-success text-center">' . $_SESSION['success_message'] . '</div>';
+                    unset($_SESSION['success_message']); 
+                }
+                if (isset($_SESSION['error_message'])) {
+                    echo '<div class="alert alert-danger text-center">' . $_SESSION['error_message'] . '</div>';
+                    unset($_SESSION['error_message']); 
+                }
+                if (isset($_SESSION['errors'])) {
+                    foreach ($_SESSION['errors'] as $error) {
+                    echo '<div class="alert alert-danger text-center">' . $error . '</div>';
+                }
+                unset($_SESSION['errors']); 
+                }
+            ?>
+        </div>
 
     </main>
 

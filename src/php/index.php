@@ -30,7 +30,7 @@
                         <a class="nav-link mysecret-nav-link active " aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-cta-link btn btn-sm mysecret-btn-primary ms-lg-3" href="../../public/sign_in.html"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a>
+                        <a class="nav-link mysecret-cta-link btn btn-sm mysecret-btn-primary ms-lg-3" href="../../public/sign_in.php"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
 
     <header class="mysecret-hero text-center d-flex align-items-center justify-content-center">
         <div class="container text-white">
-            <a href="../../public/sign_up.html" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-person-plus-fill me-2"></i>Únete a MySecret</a>
+            <a href="../../public/sign_up.php" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-person-plus-fill me-2"></i>Únete a MySecret</a>
         </div>
     </header>
 

@@ -393,38 +393,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!--<nav class="navbar navbar-expand-lg mysecret-navbar py-3">
-        <div class="container-fluid">
-            <img src="Assets/logo v1.3.jpg" alt="MySecret Logo" class="mysecret-logo-img">
-            <a class="navbar-brand mysecret-logo me-auto" href="index.php">MySecret</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="mysecret-gold"><i class="bi bi-list"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="manage_subscriptions.php"><i class="bi bi-star-fill me-2"></i>My Subscriptions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="messages_fan.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="unread_notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link active" href="fan_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="#"><i class="bi bi-box-arrow-right me-2"></i>Log out</a>
-                    </li>
-                    <li class="nav-item">
-                        <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar-2 img-fluid">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->

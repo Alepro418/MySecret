@@ -100,6 +100,27 @@
                 </div>
             </div>
         </section>
+
+        <div class="alert">
+            <?php
+                session_start();
+                if (isset($_SESSION['success_message'])) {
+                    echo '<div class="alert alert-success text-center">' . $_SESSION['success_message'] . '</div>';
+                    unset($_SESSION['success_message']); 
+                }
+                if (isset($_SESSION['error_message'])) {
+                    echo '<div class="alert alert-danger text-center">' . $_SESSION['error_message'] . '</div>';
+                    unset($_SESSION['error_message']); 
+                }
+                if (isset($_SESSION['errors'])) {
+                    foreach ($_SESSION['errors'] as $error) {
+                    echo '<div class="alert alert-danger text-center">' . $error . '</div>';
+                }
+                unset($_SESSION['errors']); 
+                }
+            ?>
+        </div>
+
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
