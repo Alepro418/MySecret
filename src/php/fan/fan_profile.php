@@ -239,8 +239,8 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Jhon <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Bienvenido a tu panel de usuario. Aquí puedes gestionar tu actividad.</p>
-            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Editar Perfil</button>
+            <p class="lead mysecret-card-text">Welcome to your dashboard. Here you can manage your activity.</p>
+            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
         <section class="mb-5">
@@ -323,9 +323,9 @@
 
         <hr class="m5 mysecret-divider">
 
-        <section class="mb-5">
+      <section class="mb-5">
     <h2 class="text-center mb-4 mysecret-section-title">Quick Actions</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
         <div class="col">
             <div class="card mysecret-card h-100 text-center p-4">
                 <i class="bi bi-compass display-4 mysecret-gold mb-3"></i>
@@ -334,14 +334,7 @@
                 <a href="#" class="btn mysecret-btn-primary mt-3"><i class="bi bi-binoculars-fill me-2"></i>Explore Content</a>
             </div>
         </div>
-        <div class="col">
-            <div class="card mysecret-card h-100 text-center p-4">
-                <i class="bi bi-star-fill display-4 mysecret-gold mb-3"></i>
-                <h5 class="card-title mysecret-card-title">Manage Subscriptions</h5>
-                <p class="card-text mysecret-card-text">View, renew, or cancel your active subscriptions.</p>
-                <a href="manage_subscriptions.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-credit-card me-2"></i>My Subscriptions</a>
-            </div>
-        </div>
+
         <div class="col">
             <div class="card mysecret-card h-100 text-center p-4">
                 <i class="bi bi-bookmark-fill display-4 mysecret-gold mb-3"></i>
@@ -350,6 +343,7 @@
                 <a href="saved_post.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-collection-fill me-2"></i>View Saved</a>
             </div>
         </div>
+
         <div class="col">
             <div class="card mysecret-card h-100 text-center p-4">
                 <i class="bi bi-envelope-fill display-4 mysecret-gold mb-3"></i>
@@ -358,7 +352,8 @@
                 <a href="messages_fan.php" class="btn mysecret-btn-primary mt-3"><i class="bi bi-chat-text me-2"></i>Check Inbox</a>
             </div>
         </div>
-        <div class="col">
+    </div> <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+        <div class="col-lg-4">
             <div class="card mysecret-card h-100 text-center p-4">
                 <i class="bi bi-bell-fill display-4 mysecret-gold mb-3"></i>
                 <h5 class="card-title mysecret-card-title">Notifications</h5>
@@ -366,7 +361,7 @@
                 <a href="notifications.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-bell me-2"></i>View Alerts</a>
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
             <div class="card mysecret-card h-100 text-center p-4">
                 <i class="bi bi-gear display-4 mysecret-gold mb-3"></i>
                 <h5 class="card-title mysecret-card-title">Account Settings</h5>
@@ -374,8 +369,9 @@
                 <a href="settings.php" class="btn mysecret-btn-primary mt-3"><i class="bi bi-person-circle me-2"></i>Edit Profile</a>
             </div>
         </div>
-    </div>
+    </div> 
 </section>
+
 
     </main>
 

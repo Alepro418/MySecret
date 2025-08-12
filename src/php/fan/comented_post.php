@@ -166,8 +166,8 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Mis Comentarios</h1>
-            <p class="lead mysecret-subtitle">Aquí encontrarás todos los comentarios que has dejado en las publicaciones.</p>
+            <h1 class="display-3 mysecret-title">My Comments</h1>
+            <p class="lead mysecret-subtitle">Here you'll find all the comments you've left on posts.</p>
         </div>
     </header>
 
@@ -176,24 +176,24 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@aishasofeyofficial</p>
-            <p class="lead mysecret-card-text">Revisa el historial de tus interacciones y contribuciones en MySecret.</p>
+            <p class="lead mysecret-card-text">Review your interaction and contribution history in MySecret.</p>
         </div>
 
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Publicaciones Comentadas</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Commented Posts</h2>
             <div class="row row-cols-1 g-4">
                 <div class="col">
                     <div class="mysecret-message-item d-flex flex-column flex-md-row align-items-start">
                         <img src="https://via.placeholder.com/60x60/FFC107/FFFFFF?text=P1" alt="Post Thumbnail" class="rounded-circle me-md-3 mb-3 mb-md-0" style="width: 60px; height: 60px; object-fit: cover;">
                         <div class="flex-grow-1">
-                            <h5 class="mysecret-gold mb-1">Comentario en: "Secretos de la Cocina Mediterránea"</h5>
-                            <p class="mb-1 opacity-75">Tu comentario: "¡Excelente receta! La probé y me encantó, especialmente la parte del aceite de oliva. ¡Gracias por compartir!"</p>
-                            <small class="text-muted">Por @ChefMaria - Hace 3 horas</small>
+                            <h5 class="mysecret-gold mb-1">Comment on: "Secrets of Mediterranean Cuisine"</h5>
+                            <p class="mb-1 opacity-75">Your comment: "Excellent recipe! I tried it and loved it, especially the olive oil part. Thanks for sharing!"</p>
+                            <small class="text-muted">By @ChefMaria - 3 hours ago</small>
                             <div class="mt-2">
-                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
-                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Editar</button>
+                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>See post</a>
+                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Edit</button>
                             </div>
                         </div>
                     </div>
@@ -203,12 +203,12 @@
                     <div class="mysecret-message-item d-flex flex-column flex-md-row align-items-start">
                         <img src="https://via.placeholder.com/60x60/20c997/FFFFFF?text=P2" alt="Post Thumbnail" class="rounded-circle me-md-3 mb-3 mb-md-0" style="width: 60px; height: 60px; object-fit: cover;">
                         <div class="flex-grow-1">
-                            <h5 class="mysecret-gold mb-1">Comentario en: "Guía Definitiva para Programadores Principiantes"</h5>
-                            <p class="mb-1 opacity-75">Tu comentario: "Muy útil para quienes estamos empezando. Me ayudó a entender mejor los conceptos básicos de Python."</p>
-                            <small class="text-muted">Por @CodeMaster - Hace 1 día</small>
+                            <h5 class="mysecret-gold mb-1">Comment on: "The Ultimate Guide for Beginner Programmers"</h5>
+                            <p class="mb-1 opacity-75">Your comment: "Very useful for those of us just starting out. It helped me better understand the basics of Python."</p>
+                            <small class="text-muted">By @CodeMaster - 1 day ago</small>
                             <div class="mt-2">
-                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
-                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Editar</button>
+                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>See post</a>
+                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Edit</button>
                             </div>
                         </div>
                     </div>
@@ -218,12 +218,12 @@
                     <div class="mysecret-message-item d-flex flex-column flex-md-row align-items-start">
                         <img src="https://via.placeholder.com/60x60/007bff/FFFFFF?text=P3" alt="Post Thumbnail" class="rounded-circle me-md-3 mb-3 mb-md-0" style="width: 60px; height: 60px; object-fit: cover;">
                         <div class="flex-grow-1">
-                            <h5 class="mysecret-gold mb-1">Comentario en: "Fitness en Casa: Rutina para Principiantes"</h5>
-                            <p class="mb-1 opacity-75">Tu comentario: "¡Esta rutina es perfecta para mí! Me encanta que no necesito equipo especial. ¡Gracias por la motivación!"</p>
-                            <small class="text-muted">Por @FitLife - Hace 4 días</small>
+                            <h5 class="mysecret-gold mb-1">Comment on: "Fitness at Home: Routine for Beginners"</h5>
+                            <p class="mb-1 opacity-75">Your comment: "This routine is perfect for me! I love that I don't need any special equipment. Thanks for the motivation!"</p>
+                            <small class="text-muted">By @FitLife - 4 days ago</small>
                             <div class="mt-2">
-                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
-                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Editar</button>
+                                <a href="#" class="btn btn-sm mysecret-btn-outline me-2"><i class="bi bi-eye-fill me-2"></i>See post</a>
+                                <button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i> Edit</button>
                             </div>
                         </div>
                     </div>

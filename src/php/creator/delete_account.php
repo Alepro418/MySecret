@@ -263,61 +263,61 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Eliminar o Suspender Mi Cuenta</h1>
-            <p class="lead mysecret-subtitle">Administra el estado de tu cuenta de MySecret.</p>
+            <h1 class="display-3 mysecret-title">Delete or Suspend My Account</h1>
+            <p class="lead mysecret-subtitle">Manage your MySecret account status.</p>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <div class="mysecret-delete-account-card">
             <i class="bi bi-person-x-fill display-1 text-danger mb-4"></i>
-            <h2>Opciones de Cuenta</h2>
-            <p>Aquí puedes elegir entre **suspender temporalmente** tu cuenta o **eliminarla permanentemente**. Por favor, lee cuidadosamente las implicaciones de cada opción.</p>
+            <h2>Account Options</h2>
+            <p>Here you can choose between **temporarily suspending** your account or **permanently deleting it**. Please read the implications of each option carefully.</p>
 
             <hr class="my-5 mysecret-divider">
 
-            <h3 class="mysecret-gold mb-3"><i class="bi bi-pause-circle-fill me-2"></i>Suspender Cuenta Temporalmente</h3>
-            <p class="mb-4">Si solo necesitas un descanso, puedes suspender tu cuenta. Tu perfil, publicaciones y contenido no serán visibles para otros usuarios, y no recibirás notificaciones. Podrás reactivar tu cuenta en cualquier momento volviendo a iniciar sesión.</p>
+            <h3 class="mysecret-gold mb-3"><i class="bi bi-pause-circle-fill me-2"></i>Temporarily Suspend Account</h3>
+            <p class="mb-4">If you just need a break, you can suspend your account. Your profile, posts, and content will not be visible to other users, and you won't receive notifications. You can reactivate your account at any time by logging back in.</p>
             <button class="btn mysecret-btn-outline" onclick="suspendAccount()">
-                <i class="bi bi-pause-fill me-2"></i> Suspender Cuenta
+                <i class="bi bi-pause-fill me-2"></i> Suspend Account
             </button>
 
             <hr class="my-5 mysecret-divider">
 
-            <h3 class="mysecret-gold mb-3 text-danger"><i class="bi bi-trash-fill me-2"></i>Eliminar Cuenta Permanentemente</h3>
-            <p>La eliminación de tu cuenta en MySecret es una acción **permanente e irreversible**. Una vez que tu cuenta sea eliminada, perderás acceso a:</p>
+            <h3 class="mysecret-gold mb-3 text-danger"><i class="bi bi-trash-fill me-2"></i>Permanently Delete Account</h3>
+            <p>Deleting your MySecret account is a **permanent and irreversible action**. Once your account is deleted, you will lose access to:</p>
             <ul>
-                <li>Todas tus publicaciones y contenido.</li>
-                <li>Tus mensajes y conversaciones.</li>
-                <li>Tu historial de suscripciones y cualquier suscripción activa.</li>
-                <li>Tu perfil y toda la información asociada.</li>
+                <li>All your posts and content.</li>
+                <li>Your messages and conversations.</li>
+                <li>Your subscription history and any active subscriptions.</li>
+                <li>Your profile and all associated information.</li>
             </ul>
-            <p>Por favor, considera cuidadosamente esta decisión. Una vez eliminada, tu cuenta y tus datos no podrán ser recuperados.</p>
+            <p>Please consider this decision carefully. Once deleted, your account and data cannot be recovered..</p>
 
             <div class="form-check text-start mb-4">
                 <input class="form-check-input" type="checkbox" id="confirmDelete">
                 <label class="form-check-label" for="confirmDelete">
-                    Entiendo que la eliminación de mi cuenta es permanente y que perderé todo mi contenido y acceso.
+                    I understand that deletion of my account is permanent and that I will lose all my content and access.
                 </label>
             </div>
 
             <button class="btn btn-danger" id="deleteAccountBtn" onclick="confirmAndDelete()">
-                <i class="bi bi-trash-fill me-2"></i> Eliminar Mi Cuenta Permanentemente
+                <i class="bi bi-trash-fill me-2"></i> Delete My Account Permanently
             </button>
 
             <div class="alert alert-warning mt-4" role="alert" id="deleteWarning" style="display: none;">
-                <strong>¡Advertencia!</strong> Debes marcar la casilla de confirmación para poder eliminar tu cuenta.
+                <strong>¡Warning!</strong> You must check the confirmation box to delete your account.
             </div>
         </div>
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved..</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

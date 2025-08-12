@@ -166,8 +166,8 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Contenido que me Gusta</h1>
-            <p class="lead mysecret-subtitle">Aquí encontrarás todo el contenido que te ha encantado.</p>
+            <h1 class="display-3 mysecret-title">Content I Like</h1>
+            <p class="lead mysecret-subtitle">Here you'll find all the content you loved.</p>
         </div>
     </header>
 
@@ -175,26 +175,26 @@
         <div class="text-center mb-5">
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
-            <p class="text-muted">@aishasofeyofficial</p>
-            <p class="lead mysecret-card-text">Explora las publicaciones que han capturado tu interés y les has dado un ❤️.</p>
+            <p class="text-muted">@Juanito</p>
+            <p class="lead mysecret-card-text">Explore the posts that have captured your interest and you have given them a ❤️.</p>
         </div>
 
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Mis Publicaciones Favoritas</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">My Favorite Posts</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mysecret-content-grid">
                 <div class="col">
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/FFC107/FFFFFF?text=Post+Favorito+1" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">Innovaciones en Inteligencia Artificial</h5>
-                            <p class="card-text">Un vistazo a las últimas tendencias que están transformando el mundo.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">Innovations in Artificial Intelligence</h5>
+                            <p class="card-text">A look at the latest trends that are transforming the world.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @TechGuru - Me gustó hace 3 días
+                            From @TechGuru - Liked 3 days ago
                         </div>
                     </div>
                 </div>
@@ -202,13 +202,13 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/20c997/FFFFFF?text=Post+Favorito+2" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">Consejos para una Vida Saludable</h5>
-                            <p class="card-text">Hábitos sencillos para mejorar tu bienestar físico y mental.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">Tips for a Healthy Life</h5>
+                            <p class="card-text">Simple habits to improve your physical and mental well-being.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @HealthyVibes - Me gustó hace 1 semana
+                            From @HealthyVibes - Liked 1 week ago
                         </div>
                     </div>
                 </div>
@@ -216,13 +216,13 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/007bff/FFFFFF?text=Post+Favorito+3" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">Historias de Viajes Inolvidables</h5>
-                            <p class="card-text">Aventuras y descubrimientos alrededor del mundo.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">Unforgettable Travel Stories</h5>
+                            <p class="card-text">Adventures and discoveries around the world.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @WanderlustGirl - Me gustó hace 2 semanas
+                            From @WanderlustGirl - Liked 2 weeks ago
                         </div>
                     </div>
                 </div>
@@ -230,13 +230,13 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/fd7e14/FFFFFF?text=Post+Favorito+4" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">El Arte de la Fotografía con Smartphone</h5>
-                            <p class="card-text">Captura momentos increíbles con tu teléfono móvil.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">The Art of Smartphone Photography</h5>
+                            <p class="card-text">Capture incredible moments with your mobile phone.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @MobilePics - Me gustó hace 1 mes
+                            From @MobilePics - Liked 1 month ago
                         </div>
                     </div>
                 </div>
@@ -244,13 +244,13 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/6f42c1/FFFFFF?text=Post+Favorito+5" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">Entendiendo la Economía Global</h5>
-                            <p class="card-text">Un análisis simplificado de los mercados financieros.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">Understanding the Global Economy</h5>
+                            <p class="card-text">A simplified analysis of financial markets.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @FinanceInsights - Me gustó hace 2 meses
+                            From @FinanceInsights - Liked 2 months ago
                         </div>
                     </div>
                 </div>
@@ -258,13 +258,13 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/400x200/dc3545/FFFFFF?text=Post+Favorito+6" class="card-img-top" alt="Post Title">
                         <div class="card-body">
-                            <h5 class="card-title">La Psicología Detrás de la Felicidad</h5>
-                            <p class="card-text">Descubre cómo cultivar una mentalidad positiva.</p>
-                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>Ver Publicación</a>
+                            <h5 class="card-title">The Psychology Behind Happiness</h5>
+                            <p class="card-text">Discover how to cultivate a positive mindset.</p>
+                            <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-eye-fill me-2"></i>See post</a>
                             <button class="btn btn-outline-info ms-2"><i class="bi bi-share-fill"></i></button>
                         </div>
                         <div class="card-footer text-muted">
-                            De @MindfulnessPro - Me gustó hace 3 meses
+                            From @MindfulnessPro - Liked 3 months ago
                         </div>
                     </div>
                 </div>
@@ -274,11 +274,11 @@
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

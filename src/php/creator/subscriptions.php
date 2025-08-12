@@ -235,42 +235,42 @@
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-people-fill mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">1,234</div>
-                        <div class="mysecret-stat-label">Total Suscriptores Activos</div>
+                        <div class="mysecret-stat-label">Total Active Suscribers</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-graph-up-arrow mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">+57</div>
-                        <div class="mysecret-stat-label">Nuevos Suscriptores (Últimos 30 días)</div>
+                        <div class="mysecret-stat-label">New Suscribers (Last 30 days)</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-currency-dollar mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">$5,678</div>
-                        <div class="mysecret-stat-label">Ganancias por Suscripción (Este Mes)</div>
+                        <div class="mysecret-stat-label">Ernings per Subscription (This Month)</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-arrow-down-up mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">85%</div>
-                        <div class="mysecret-stat-label">Tasa de Retención (Mensual)</div>
+                        <div class="mysecret-stat-label">Retention rate (Monthly)</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-person-plus-fill mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">25</div>
-                        <div class="mysecret-stat-label">Suscriptores a punto de renovar</div>
+                        <div class="mysecret-stat-label">Subscribers about to renew</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100 p-4">
                         <i class="bi bi-bell-fill mysecret-stat-icon mb-3"></i>
                         <div class="mysecret-stat-value">3</div>
-                        <div class="mysecret-stat-label">Alertas de Suscripción</div>
+                        <div class="mysecret-stat-label">Alerts of Subscription</div>
                     </div>
                 </div>
             </div>

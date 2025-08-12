@@ -1,6 +1,6 @@
 <?php
 session_start();
-// La ruta a tu página de inicio de sesión, ajusta si es necesario
+// The path to your login page, adjust if necessary
 $login_page_url = '../../../public/sign_in.php'; 
 
 if (!isset($_SESSION['user_id'])) {
@@ -9,12 +9,12 @@ if (!isset($_SESSION['user_id'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Tu Mundo Exclusivo de Contenido</title>
+    <title>MySecret - Your Exclusive Content World</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -109,16 +109,16 @@ if (!isset($_SESSION['user_id'])) {
             box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
             color: white;
         }
-        /* Clase para el botón de like cuando está activo */
+        /* Class for the like button when active */
         .btn-like-active {
-            background-color: #ffd700; /* Color dorado */
+            background-color: #ffd700; /* Gold color */
             border-color: #ffd700;
-         color: #343a40; /* Color del texto para contrastar */
+         color: #343a40; /* Text color for contrast */
         }
 
-        /* Opcional: Estilo al pasar el mouse por encima */
+        /* Optional: Hover style */
         .btn-like-active:hover {
-            background-color: #e6c200; /* Un tono un poco más oscuro */
+            background-color: #e6c200; /* A slightly darker tone */
             border-color: #e6c200;
             color: #343a40;
         }
@@ -140,13 +140,13 @@ if (!isset($_SESSION['user_id'])) {
                         <a class="nav-link mysecret-nav-link active" aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="subscriptions.php"><i class="bi bi-star-fill me-2"></i>My Subscripctions</a>
+                        <a class="nav-link mysecret-nav-link" href="subscriptions.php"><i class="bi bi-star-fill me-2"></i>My Subscriptions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link" href="messages_fan.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link" href="fan_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -167,7 +167,7 @@ if (!isset($_SESSION['user_id'])) {
     <header class="mysecret-hero text-center d-flex align-items-center justify-content-center">
         <div class="container text-white">
             <h1 class="display-3 mb-4 mysecret-title">Welcome to MySecret</h1>
-            <p class="lead mb-5 mysecret-subtitle">Discover exclusive content and support your favorites creators.</p>
+            <p class="lead mb-5 mysecret-subtitle">Discover exclusive content and support your favorite creators.</p>
             <a href="explore_creators.php" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-search me-2"></i>Explore now</a>
         </div>
     </header>
@@ -178,13 +178,13 @@ if (!isset($_SESSION['user_id'])) {
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_1.jpg" class="card-img-top mysecret-card-img" alt="Publicación Exclusiva">
+                        <img src="Assets/content_post_1.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">Título de Publicación Exclusiva</h5>
-                            <p class="card-text mysecret-card-text small">Por: Aisha Sofey <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">Este es un fragmento del contenido exclusivo al que estás suscrito. ¡Disfrútalo!</p>
+                            <h5 class="card-title mysecret-card-title">Exclusive Post Title</h5>
+                            <p class="card-text mysecret-card-text small">By: Aisha Sofey <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
+                            <p class="card-text">This is a snippet of the exclusive content you are subscribed to. Enjoy it!</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="view_post.php?id=123" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Contenido</a>
+                                <a href="view_post.php?id=123" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>View Content</a>
                                 <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 150 <i class="bi bi-chat-fill ms-3 me-1"></i> 25</small>
                             </div>
                         </div>
@@ -192,38 +192,34 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_2.jpg" class="card-img-top mysecret-card-img" alt="Publicación Exclusiva">
+                        <img src="Assets/content_post_2.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">Nuevo Vlog: Mi día de rodaje</h5>
-                            <p class="card-text mysecret-card-text small">Por: Sophie Rain <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">¡Mira lo que pasa detrás de cámaras en mi último proyecto!</p>
-                             <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mysecret-card-title">New Vlog: My Shooting Day</h5>
+                            <p class="card-text mysecret-card-text small">By: Sophie Rain <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
+                            <p class="card-text">See what happens behind the scenes in my latest project!</p>
+                            <div class="d-flex justify-content-between align-items-center">
                                 <button class="btn mysecret-btn-outline view-content-btn" data-bs-toggle="modal" data-bs-target="#contentModal" data-content-id="124">
-                                    <i class="bi bi-play-circle-fill me-2"></i>ver video
+                                    <i class="bi bi-play-circle-fill me-2"></i>watch video 
                                 </button>
-                                <!--<a href="view_post.php?id=124" class="btn mysecret-btn-outline"><i class="bi bi-play-circle-fill me-2"></i>Ver Video</a>-->
-                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 210 <i class="bi bi-chat-fill ms-3 me-1"></i> 38</small>
+                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 210 <i class="bi bi-chat-fill ms-3 me-1"></i> 40</small>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_3.jpg" class="card-img-top mysecret-card-img" alt="Publicación Exclusiva">
+                        <img src="Assets/content_post_3.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">Set de Fotos Exclusivo</h5>
-                            <p class="card-text mysecret-card-text small">Por: Julia Filippo <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">¡Nuevas fotos solo para mis suscriptores VIP!</p>
-                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="view_post.php?id=125" class="btn mysecret-btn-outline"><i class="bi bi-images me-2"></i>Ver Galería</a>
-                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 98 <i class="bi bi-chat-fill ms-3 me-1"></i> 12</small>
+                            <h5 class="card-title mysecret-card-title">Exclusive Photo: Golden Hour</h5>
+                            <p class="card-text mysecret-card-text small">By: Bella Thorne <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
+                            <p class="card-text">A special moment just for my subscribers. Hope you like it!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="view_post.php?id=125" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>View Content</a>
+                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 320 <i class="bi bi-chat-fill ms-3 me-1"></i> 55</small>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-             <div class="text-center mt-4">
-                <a href="my_subscriptions.php" class="btn mysecret-btn-primary"><i class="bi bi-arrow-clockwise me-2"></i>more content</a>
             </div>
         </section>
 
@@ -239,8 +235,8 @@ if (!isset($_SESSION['user_id'])) {
                             <h5 class="card-title mysecret-card-title">Aisha Sofey <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">My names Aishah, your tiny little Asian waifu with really big legs 😣
                             I’ll be showing you whatever you want as long as you’re nice to me 💕</p>
-                            <a href="creator_profile.php?id=aisha" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=aisha" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -251,8 +247,8 @@ if (!isset($_SESSION['user_id'])) {
                             <h5 class="card-title mysecret-card-title">Sophie Rain <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">where you see my NAUGHTY SIDE 😈
                             I never expected to do this… but screw it, full sending it off the bat 😤😤</p>
-                            <a href="creator_profile.php?id=sophie" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=sophie" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -262,8 +258,8 @@ if (!isset($_SESSION['user_id'])) {
                         <div class="card-body">
                             <h5 class="card-title mysecret-card-title">Julia Filippo <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">yes, i'm the "innocent" blonde you know from the bop house.... but not so innocent here :P</p>
-                            <a href="creator_profile.php?id=julia" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=julia" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -281,8 +277,8 @@ if (!isset($_SESSION['user_id'])) {
                         <div class="card-body">
                             <h5 class="card-title mysecret-card-title">Madzy23 <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">18 ~ literally just made this lol i'm 5'0 but don't bully cuz i'm still growing xd</p>
-                            <a href="creator_profile.php?id=madzy" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=madzy" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -292,8 +288,8 @@ if (!isset($_SESSION['user_id'])) {
                         <div class="card-body">
                             <h5 class="card-title mysecret-card-title">Wemmixi <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">Hiii -`♡´- Welcome to my super exclusive VIP page! 🤍 this is where we can chat a ton and you'll REALLYYY get to know me 🙂</p>
-                            <a href="creator_profile.php?id=wemmixi" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=wemmixi" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -303,53 +299,115 @@ if (!isset($_SESSION['user_id'])) {
                         <div class="card-body">
                             <h5 class="card-title mysecret-card-title">Luna Acosta <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">Bienvenido a mi parte traviesa jajaj 😈💦 Si, hay contenido explícito: Reacciones como en insta pero sin ropa...</p>
-                            <a href="creator_profile.php?id=luna" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>Ver Perfil</a>
-                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Suscribirse</button>
+                            <a href="creator_profile.php?id=luna" class="btn mysecret-btn-outline"><i class="bi bi-person-fill me-2"></i>View profile</a>
+                            <button class="btn mysecret-btn-primary ms-2"><i class="bi bi-currency-dollar me-2"></i>Subscribe</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content mysecret-card">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contentModalLabel">Cargando...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="content-placeholder" class="text-center">
+                        <p class="text-muted">Cargando contenido...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. All right reserved.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved..</p>
             <ul class="list-inline mb-0">
                 <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Politics of Privacity</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
                 <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script>
+        // Esperar a que el documento esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    const contentModal = document.getElementById('contentModal');
+    
+    // Escuchar el evento de que el modal se va a mostrar
+    contentModal.addEventListener('show.bs.modal', function (event) {
+        // Obtener el botón que disparó el modal
+        const button = event.relatedTarget;
+        // Extraer el ID del contenido del atributo 'data-content-id'
+        const contentId = button.getAttribute('data-content-id');
 
-    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content mysecret-card">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contentModalLabel">Título del Contenido</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center">
-                <div id="content-placeholder">
-                    <p class="text-muted">Cargando contenido...</p>
-                </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <button id="likeBtn" class="btn mysecret-btn-outline me-2">
-                        <i class="bi bi-hand-thumbs-up"></i>
-                        <span class="ms-2">Me gusta</span>
-                    </button>
-                    <span id="likeCount" class="text-white-50 small">0 Likes</span>
-                </div>
-                <button type="button" class="btn mysecret-btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>
+        // Referencias a elementos dentro del modal
+        const modalTitle = contentModal.querySelector('.modal-title');
+        const contentPlaceholder = document.getElementById('content-placeholder');
+
+        // Limpiar el contenido anterior y mostrar el mensaje de carga
+        contentPlaceholder.innerHTML = '<p class="text-muted">Cargando contenido...</p>';
+        modalTitle.textContent = 'Cargando...';
+
+        // Realizar la petición fetch al script PHP
+        fetch(`../../processes/fetch_content.php?id_content=${contentId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error en la respuesta del servidor.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    const content = data.data;
+                    modalTitle.textContent = content.title;
+
+                    let contentHtml = '';
+                    switch (content.type_content) {
+                        case 'video':
+                            contentHtml = `<video controls class="img-fluid" src="${content.url_file}"></video>`;
+                            break;
+                        case 'image':
+                            contentHtml = `<img src="${content.url_file}" class="img-fluid" alt="${content.title}">`;
+                            break;
+                        // Añade más casos para otros tipos de contenido si es necesario
+                        default:
+                            contentHtml = `<p>Tipo de contenido no soportado.</p>`;
+                            break;
+                    }
+
+                    contentPlaceholder.innerHTML = contentHtml;
+
+                } else {
+                    modalTitle.textContent = "Error";
+                    contentPlaceholder.innerHTML = `<p class="text-danger">${data.message}</p>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                modalTitle.textContent = "Error";
+                contentPlaceholder.innerHTML = `<p class="text-danger">No se pudo cargar el contenido. Por favor, inténtalo de nuevo.</p>`;
+            });
+    });
+
+    // Escuchar el evento de que el modal se va a ocultar
+    contentModal.addEventListener('hide.bs.modal', function () {
+        const contentPlaceholder = document.getElementById('content-placeholder');
+        // Pausar cualquier video o audio que se esté reproduciendo
+        const media = contentPlaceholder.querySelector('video, audio');
+        if (media) {
+            media.pause();
+            media.currentTime = 0; // Opcional: reiniciar el video
+        }
+    });
+});
+    </script>
 </body>
 </html>

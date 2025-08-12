@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where your fantasy is our reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,7 +117,7 @@
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -136,27 +136,27 @@
     </nav>
 
     <main class="container my-5 py-3">
-        <h2 class="mysecret-section-title">Cambiar Contraseña</h2>
-        <p class="text-center lead mysecret-card-text mb-4">Mantén tu cuenta segura actualizando tu contraseña regularmente.</p>
+        <h2 class="mysecret-section-title">Change Password</h2>
+        <p class="text-center lead mysecret-card-text mb-4">Keep your account secure by updating your password regularly.</p>
 
         <div class="row justify-content-center">
             <div class="col-md-7 col-lg-6">
                 <div class="mysecret-password-card">
                     <form action="process_change_password.php" method="POST">
                         <div class="mb-3">
-                            <label for="currentPassword" class="form-label mysecret-form-label">Contraseña Actual</label>
+                            <label for="currentPassword" class="form-label mysecret-form-label">Current Password</label>
                             <input type="password" class="form-control mysecret-form-control" id="currentPassword" name="current_password" required>
                         </div>
                         <div class="mb-3">
-                            <label for="newPassword" class="form-label mysecret-form-label">Nueva Contraseña</label>
+                            <label for="newPassword" class="form-label mysecret-form-label">New Password</label>
                             <input type="password" class="form-control mysecret-form-control" id="newPassword" name="new_password" required>
                         </div>
                         <div class="mb-4">
-                            <label for="confirmNewPassword" class="form-label mysecret-form-label">Confirmar Nueva Contraseña</label>
+                            <label for="confirmNewPassword" class="form-label mysecret-form-label">Confirm New Password</label>
                             <input type="password" class="form-control mysecret-form-control" id="confirmNewPassword" name="confirm_new_password" required>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn mysecret-btn-outline">Actualizar Contraseña</button>
+                            <button type="submit" class="btn mysecret-btn-outline">Update Password</button>
                         </div>
                     </form>
                 </div>

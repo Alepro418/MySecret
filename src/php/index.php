@@ -30,7 +30,7 @@
                         <a class="nav-link mysecret-nav-link active " aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-cta-link btn btn-sm mysecret-btn-primary ms-lg-3" href="../../public/sign_in.php"><i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión</a>
+                        <a class="nav-link mysecret-cta-link btn btn-sm mysecret-btn-primary ms-lg-3" href="../../public/sign_in.php"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
 
     <header class="mysecret-hero text-center d-flex align-items-center justify-content-center">
         <div class="container text-white">
-            <a href="../../public/sign_up.php" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-person-plus-fill me-2"></i>Únete a MySecret</a>
+            <a href="../../public/sign_up.php" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-person-plus-fill me-2"></i>Join MySecret</a>
         </div>
     </header>
 
@@ -132,11 +132,11 @@
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

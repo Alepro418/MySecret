@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where your fantasy is our reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -195,7 +195,7 @@ if (!isset($_SESSION['user_id'])) {
 I’ll be showing you whatever you want as long as you’re nice to me 💕
 
 SHOWING EVERYTHING JUST FOR YOU 😉</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@ SHOWING EVERYTHING JUST FOR YOU 😉</p>
 I never expected to do this… but screw it, full sending it off the bat 😤😤 I may be a virgin, but I’m not that innocent as you might think 😉
 
 FULLY NUDE CONTENT AVAILABLE !!! 💓</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>see Profile</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@ FULLY NUDE CONTENT AVAILABLE !!! 💓</p>
                         <div class="card-body">
                             <h5 class="card-title mysecret-card-title">Julia filippo <i class="bi bi-gem mysecret-gold ms-2"></i></h5>
                             <p class="card-text mysecret-card-text">yes, i'm the "innocent" blonde you know from the bop house.... but not so innocent here :P</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@ FULLY NUDE CONTENT AVAILABLE !!! 💓</p>
 i'm 5'0 but don't bully cuz i'm still growing xd
 
 message me lmk what i should do for like making contents and stuff i'd really appreciate anyone who talks to me!! idk cuz i'm uncertain here yall 😭😭</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@ clothes are stupid and naked is better hehe 🙈
 ｡ﾟﾟ･｡･ﾟﾟ｡
 ﾟ。 can’t wait to talk with you here 🍑 ~˙⋆
 ﾟ･｡･ﾟ</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@ Si, hay contenido explícito:
 
 
 … y lo que me vaya apeteciendo 😁</p>
-                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>Ver Perfil</a>
+                            <a href="#" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -292,15 +292,15 @@ Si, hay contenido explícito:
         <div class="container text-center">
             <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>
 
         <a href="create_content.php" class="floating-button">
-            <i class="bi bi-plus-circle-fill"></i> Crear Contenido
+            <i class="bi bi-plus-circle-fill"></i> Creat Content
         </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

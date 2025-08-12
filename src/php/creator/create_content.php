@@ -161,41 +161,41 @@
     <main class="container my-5 py-3">
 
         <section class="my-5">
-    <h2 class="text-center mb-4 mysecret-section-title">Subir Nuevo Contenido</h2>
+    <h2 class="text-center mb-4 mysecret-section-title">Upload New Content</h2>
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
             <div class="card mysecret-card p-4">
                 <div class="card-body">
                     <form action="upload_content.php" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="contentTitle" class="form-label mysecret-form-label">Título del Contenido</label>
+                            <label for="contentTitle" class="form-label mysecret-form-label">Content Title</label>
                             <input type="text" class="form-control mysecret-form-control" id="contentTitle" name="contentTitle" required>
                         </div>
                         <div class="mb-3">
-                            <label for="contentDescription" class="form-label mysecret-form-label">Descripción</label>
+                            <label for="contentDescription" class="form-label mysecret-form-label">Description</label>
                             <textarea class="form-control mysecret-form-control" id="contentDescription" name="contentDescription" rows="5" required></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="contentType" class="form-label mysecret-form-label">
-                            <i class="bi bi-list-nested me-2"></i> Tipo de Contenido </label>
+                            <i class="bi bi-list-nested me-2"></i> Content Type </label>
                             <select class="form-select mysecret-form-control" id="contentType" name="contentType" required>
-                                <option value="">Selecciona un tipo</option>
-                                <option value="image">Imagen</option>
+                                <option value="">Select a type</option>
+                                <option value="image">Image</option>
                                 <option value="video">Video</option>
-                                <option value="text">Texto/Publicación</option>
+                                <option value="text">Text/Publication</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="contentFile" class="form-label mysecret-form-label">Archivo de Contenido (Imagen/Video)</label>
+                            <label for="contentFile" class="form-label mysecret-form-label">Content File (Image/Video)</label>
                             <input type="file" class="form-control mysecret-form-control" id="contentFile" name="contentFile" accept="image/*,video/*">
-                            <small class="form-text text-muted">Formatos permitidos: JPG, PNG, GIF, MP4, MOV. Máx. 50MB.</small>
+                            <small class="form-text text-muted">Accepted formats: JPG, PNG, GIF, MP4, MOV. Max. 50MB.</small>
                         </div>
                         <div class="mb-3">
-                            <label for="contentTags" class="form-label mysecret-form-label">Etiquetas (separadas por comas)</label>
+                            <label for="contentTags" class="form-label mysecret-form-label">Tags (separated by commas)</label>
                             <input type="text" class="form-control mysecret-form-control" id="contentTags" name="contentTags" placeholder="ej: exclusivo, backstage, divertido">
                         </div>
                         <div class="d-grid mt-4">
-                            <button type="submit" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-upload me-2"></i>Subir Contenido</button>
+                            <button type="submit" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-upload me-2"></i>Upload Content</button>
                         </div>
                     </form>
                 </div>

@@ -142,7 +142,7 @@
                         <a class="nav-link mysecret-nav-link" aria-current="page" href="index_creator.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="subscriptions.php"><i class="bi bi-person-check-fill me-2"></i>Subscriptions</a>
+                        <a class="nav-link mysecret-nav-link active" href="subscriptions.php"><i class="bi bi-person-check-fill me-2"></i>Subscriptions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
@@ -151,7 +151,7 @@
                         <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
+                        <a class="nav-link mysecret-nav-link" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link" href="../../processes/log_out.php"><i class="bi bi-person-x-fill me-2"></i>Log out</a>

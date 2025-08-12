@@ -216,7 +216,7 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Jhon <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Aquí podrías poner una pequeña biografía del usuario, sus intereses o cuánto tiempo lleva en la plataforma.</p>
+            <p class="lead mysecret-card-text">Here you could include a short biography of the user, their interests, or how long they've been on the platform.</p>
             <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
@@ -228,8 +228,8 @@
                 <div class="col-12 mb-4">
                     <div class="card mysecret-card h-100 p-4 text-center">
                         <i class="bi bi-star-fill display-4 mysecret-gold mb-3"></i>
-                        <h5 class="card-title mysecret-card-title">Actualmente tienes <span class="mysecret-gold-text">5</span> suscripciones activas</h5>
-                        <p class="card-text mysecret-card-text">Mantente al día con tus creadores favoritos.</p>
+                        <h5 class="card-title mysecret-card-title">You currently have <span class="mysecret-gold-text">5</span> active subscriptions</h5>
+                        <p class="card-text mysecret-card-text">Stay up to date with your favorite creators.</p>
                         <a href="subscriptions.php" class="btn mysecret-btn-primary mt-3"><i class="bi bi-credit-card me-2"></i>Administrar Suscripciones</a>
                     </div>
                 </div>
@@ -237,12 +237,12 @@
                 <div class="col">
                     <div class="card mysecret-subscription-card h-100 p-4 d-flex flex-column align-items-center">
                         <img src="Assets/creator_avatar_example1.jpeg" alt="Creator Avatar" class="mysecret-creator-avatar mb-3">
-                        <h5 class="card-title mysecret-gold-text mb-1">Nombre del Creador 1</h5>
-                        <p class="mysecret-card-text-small text-muted mb-2">@creador_uno</p>
+                        <h5 class="card-title mysecret-gold-text mb-1">Creator's Name 1</h5>
+                        <p class="mysecret-card-text-small text-muted mb-2">@creator_one</p>
                         <p class="mysecret-card-text text-center mb-3">
                             <span class="mysecret-gold-text">$10.00</span> / month
                             <br>
-                            Tier: <span class="mysecret-gold-text">Premium Access</span>
+                            Tier: <span class="mysecret-gold-text">Gold</span>
                         </p>
                         <p class="mysecret-card-text-small text-muted">Next payment: July 15, 2025</p>
                         <div class="mt-auto d-flex flex-column w-100">
@@ -255,12 +255,12 @@
                 <div class="col">
                     <div class="card mysecret-subscription-card h-100 p-4 d-flex flex-column align-items-center">
                         <img src="Assets/creator_avatar_example2.jpeg" alt="Creator Avatar" class="mysecret-creator-avatar mb-3">
-                        <h5 class="card-title mysecret-gold-text mb-1">Nombre del Creador 2</h5>
-                        <p class="mysecret-card-text-small text-muted mb-2">@creador_dos_art</p>
+                        <h5 class="card-title mysecret-gold-text mb-1">Creator Name 2</h5>
+                        <p class="mysecret-card-text-small text-muted mb-2">@creator_two_art</p>
                         <p class="mysecret-card-text text-center mb-3">
                             <span class="mysecret-gold-text">$5.00</span> / month
                             <br>
-                            Tier: <span class="mysecret-gold-text">Fan Tier</span>
+                            Tier: <span class="mysecret-gold-text">bronze</span>
                         </p>
                         <p class="mysecret-card-text-small text-muted">Next payment: July 20, 2025</p>
                         <div class="mt-auto d-flex flex-column w-100">
@@ -273,12 +273,12 @@
                 <div class="col">
                     <div class="card mysecret-subscription-card h-100 p-4 d-flex flex-column align-items-center">
                         <img src="Assets/creator_avatar_example3.jpeg" alt="Creator Avatar" class="mysecret-creator-avatar mb-3">
-                        <h5 class="card-title mysecret-gold-text mb-1">Nombre del Creador 3</h5>
+                        <h5 class="card-title mysecret-gold-text mb-1">Name of the Creator 3</h5>
                         <p class="mysecret-card-text-small text-muted mb-2">@music_vibes</p>
                         <p class="mysecret-card-text text-center mb-3">
                             <span class="mysecret-gold-text">$15.00</span> / month
                             <br>
-                            Tier: <span class="mysecret-gold-text">VIP Pass</span>
+                            Tier: <span class="mysecret-gold-text">Diamond</span>
                         </p>
                         <p class="mysecret-card-text-small text-muted">Next payment: August 1, 2025</p>
                         <div class="mt-auto d-flex flex-column w-100">
@@ -291,12 +291,12 @@
                 <div class="col">
                     <div class="card mysecret-subscription-card h-100 p-4 d-flex flex-column align-items-center">
                         <img src="Assets/creator_avatar_example1.jpeg" alt="Creator Avatar" class="mysecret-creator-avatar mb-3">
-                        <h5 class="card-title mysecret-gold-text mb-1">Nombre del Creador 4</h5>
-                        <p class="mysecret-card-text-small text-muted mb-2">@creador_cuatro</p>
+                        <h5 class="card-title mysecret-gold-text mb-1">Creator Name 4</h5>
+                        <p class="mysecret-card-text-small text-muted mb-2">@creator_four</p>
                         <p class="mysecret-card-text text-center mb-3">
                             <span class="mysecret-gold-text">$15.00</span> / month
                             <br>
-                            Tier: <span class="mysecret-gold-text">Premium Access</span>
+                            Tier: <span class="mysecret-gold-text">Gold</span>
                         </p>
                         <p class="mysecret-card-text-small text-muted">Next payment: July 15, 2025</p>
                         <div class="mt-auto d-flex flex-column w-100">
@@ -309,12 +309,12 @@
                 <div class="col">
                     <div class="card mysecret-subscription-card h-100 p-4 d-flex flex-column align-items-center">
                         <img src="Assets/creator_avatar_example1.jpeg" alt="Creator Avatar" class="mysecret-creator-avatar mb-3">
-                        <h5 class="card-title mysecret-gold-text mb-1">Nombre del Creador 5</h5>
-                        <p class="mysecret-card-text-small text-muted mb-2">@creador_cinco</p>
+                        <h5 class="card-title mysecret-gold-text mb-1">Name of the Creator 5</h5>
+                        <p class="mysecret-card-text-small text-muted mb-2">@creator_five</p>
                         <p class="mysecret-card-text text-center mb-3">
                             <span class="mysecret-gold-text">$8.00</span> / month
                             <br>
-                            Tier: <span class="mysecret-gold-text">Premium Access</span>
+                            Tier: <span class="mysecret-gold-text">Gold</span>
                         </p>
                         <p class="mysecret-card-text-small text-muted">Next payment: July 15, 2025</p>
                         <div class="mt-auto d-flex flex-column w-100">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where your fantasy is our reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,17 @@
             padding: 80px 0;
             text-align: center;
             position: relative;
+        }
+        .mysecret-profile-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0.5px solid #ffc107; /* Gold border */
+            object-fit: cover;
+            margin-top: -5px; /* Pulls avatar up into banner */
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
         }
         .mysecret-profile-avatar-2 {
             width: 50px;
@@ -93,7 +104,7 @@
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -113,42 +124,42 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Configuración de Privacidad</h1>
-            <p class="lead mysecret-subtitle">Controla quién ve tu información y actividad.</p>
+            <h1 class="display-3 mysecret-title">Privacy Settings</h1>
+            <p class="lead mysecret-subtitle">Control who sees your information and activity.</p>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <section class="mb-5">
-            <h2 class="mysecret-section-title-profile mb-4">Visibilidad del Perfil</h2>
+            <h2 class="mysecret-section-title-profile mb-4">Profile Visibility</h2>
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">¿Quién puede ver tu perfil?</h5>
-                <p>Define la visibilidad general de tu perfil en MySecret.</p>
+                <h5 class="mysecret-gold">Who can see your profile?</h5>
+                <p>Define the general visibility of your profile on MySecret.</p>
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input" type="checkbox" id="profileVisibilitySwitch" checked>
-                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="profileVisibilitySwitch">Perfil Público (Visible para todos)</label>
+                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="profileVisibilitySwitch">Public Profile (Visible to everyone)</label>
                 </div>
-                <small>Si está desactivado, solo tus suscriptores y usuarios aprobados podrán ver tu perfil completo.</small>
+                <small>If disabled, only your subscribers and approved users will be able to see your full profile.</small>
             </div>
 
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">Detalles del Perfil</h5>
-                <p>Elige qué información específica de tu perfil es visible.</p>
+                <h5 class="mysecret-gold">Profile Details</h5>
+                <p>Choose which specific information on your profile is visible.</p>
                 <div class="mb-3">
-                    <label for="bioVisibility" class="form-label mysecret-form-label">¿Quién puede ver tu biografía?</label>
+                    <label for="bioVisibility" class="form-label mysecret-form-label">Who can see your bio?</label>
                     <select class="form-select mysecret-form-control" id="bioVisibility">
-                        <option selected>Todos</option>
-                        <option>Solo suscriptores</option>
-                        <option>Solo usuarios a los que sigo</option>
-                        <option>Nadie</option>
+                        <option selected>Everyone</option>
+                        <option>Subscribers only</option>
+                        <option>Only users I follow</option>
+                        <option>Nobody</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="subscriptionsVisibility" class="form-label mysecret-form-label">¿Quién puede ver tus suscripciones activas?</label>
+                    <label for="subscriptionsVisibility" class="form-label mysecret-form-label">Who can see your active subscriptions?</label>
                     <select class="form-select mysecret-form-control" id="subscriptionsVisibility">
-                        <option selected>Solo tú</option>
-                        <option>Solo suscriptores</option>
-                        <option>Todos</option>
+                        <option selected>Only you</option>
+                        <option>Subscribers only</option>
+                        <option>Everyone</option>
                     </select>
                 </div>
             </div>
@@ -157,52 +168,52 @@
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="mysecret-section-title-profile mb-4">Mensajes y Contacto</h2>
+            <h2 class="mysecret-section-title-profile mb-4">Messages and Contact</h2>
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">¿Quién puede enviarte mensajes?</h5>
-                <p>Controla quién puede iniciar conversaciones contigo.</p>
+                <h5 class="mysecret-gold">Who can send you messages?</h5>
+                <p>Control who can initiate conversations with you.</p>
                 <div class="mb-3">
                     <select class="form-select mysecret-form-control" id="messagePermissions">
-                        <option selected>Todos</option>
-                        <option>Solo suscriptores</option>
-                        <option>Solo usuarios a los que sigo</option>
-                        <option>Nadie</option>
+                        <option selected>Everyone</option>
+                        <option>Subscribers only</option>
+                        <option>Only users I follow</option>
+                        <option>Nobody</option>
                     </select>
                 </div>
             </div>
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">Gestión de Bloqueos</h5>
-                <p>Ve y administra la lista de usuarios que has bloqueado.</p>
-                <a href="blocked_users.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-person-slash me-2"></i>Ver Usuarios Bloqueados</a>
+                <h5 class="mysecret-gold">Block Management</h5>
+                <p>View and manage the list of users you have blocked.</p>
+                <a href="blocked_users.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-person-slash me-2"></i>View Blocked Users</a>
             </div>
         </section>
 
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="mysecret-section-title-profile mb-4">Datos y Actividad</h2>
+            <h2 class="mysecret-section-title-profile mb-4">Data and Activity</h2>
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">Visibilidad de la Actividad</h5>
-                <p>Elige si tu actividad (me gusta, comentarios) es visible para otros.</p>
+                <h5 class="mysecret-gold">Activity Visibility</h5>
+                <p>Choose whether your activity (likes, comments) is visible to others.</p>
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input" type="checkbox" id="activityVisibilitySwitch" checked>
-                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="activityVisibilitySwitch">Mostrar mi actividad en el feed público</label>
+                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="activityVisibilitySwitch">Show my activity on the public feed</label>
                 </div>
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input" type="checkbox" id="likesVisibilitySwitch">
-                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="likesVisibilitySwitch">Ocultar mis "me gusta" en publicaciones</label>
+                    <label class="form-check-label mysecret-form-check-label" style="color: #000000" for="likesVisibilitySwitch">Hide my "likes" on posts</label>
                 </div>
             </div>
             <div class="card p-4 mb-4 mysecret-setting-card">
-                <h5 class="mysecret-gold">Gestionar Datos Personales</h5>
-                <p>Solicita una copia de tus datos o gestiona su uso.</p>
-                <a href="download_data.php" class="btn mysecret-btn-outline mt-3 me-2"><i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Descargar Mis Datos</a>
-                <a href="data_usage_settings.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-clipboard-data-fill me-2"></i>Preferencias de Uso de Datos</a>
+                <h5 class="mysecret-gold">Manage Personal Data</h5>
+                <p>Request a copy of your data or manage its usage.</p>
+                <a href="download_data.php" class="btn mysecret-btn-outline mt-3 me-2"><i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Download My Data</a>
+                <a href="data_usage_settings.php" class="btn mysecret-btn-outline mt-3"><i class="bi bi-clipboard-data-fill me-2"></i>Data Usage Preferences</a>
             </div>
         </section>
 
         <div class="text-center mt-5">
-            <button class="btn mysecret-btn-gold-fill btn-lg px-5 py-3">Guardar Cambios</button>
+            <button class="btn mysecret-btn-gold-fill btn-lg px-5 py-3">Save Changes</button>
         </div>
     </main>
 

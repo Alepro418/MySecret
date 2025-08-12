@@ -188,10 +188,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link active" aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
+                        <a class="nav-link mysecret-nav-link" aria-current="page" href="index_fan.php"><i class="bi bi-house-door-fill me-2"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="subscriptions.php"><i class="bi bi-star-fill me-2"></i>My Subscripctions</a>
+                        <a class="nav-link mysecret-nav-link active" href="subscriptions.php"><i class="bi bi-star-fill me-2"></i>My Subscripctions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link" href="messages_fan.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
@@ -217,8 +217,8 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Perfil de Usuario</h1>
-            <p class="lead mysecret-subtitle">Administra tu perfil y explora tus conexiones.</p>
+            <h1 class="display-3 mysecret-title">User profile</h1>
+            <p class="lead mysecret-subtitle">Manage your profile and explore your connections.</p>
         </div>
     </header>
 
@@ -227,111 +227,110 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Bienvenido a tu panel de usuario. Aquí puedes gestionar tu actividad.</p>
-            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Editar Perfil</button>
+            <p class="lead mysecret-card-text">Welcome to your dashboard. Here you can manage your activity.</p>
+            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Mis Suscripciones</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">My Subscriptions</h2>
             <div class="list-group mysecret-subscription-list">
                 <div class="list-group-item">
                     <div class="d-flex align-items-center mysecret-subscription-info">
                         <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Chef María</h5>
+                            <h5 class="mb-1 mysecret-gold">Chef Maria</h5>
                             <p class="mb-0 text-muted">@ChefMariaOficial</p>
-                            <p class="mb-0 text-muted">Finaliza: 31/12/2025</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <p class="mb-0 text-muted">Ends: 12/31/2025</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active Membership</span>
                         </div>
                     </div>
                     <div class="mysecret-subscription-actions">
-                        <button class="btn btn-sm btn-outline-info me-1">Nivel</button>
-                        <button class="btn mysecret-btn-primary">Renovar Suscripción</button>
-                        <button class="btn btn-outline-danger">Cancelar Suscripción</button>
+                        <button class="btn btn-sm btn-outline-info me-1">Tier</button>
+                        <button class="btn mysecret-btn-primary">Renew subscription</button>
+                        <button class="btn btn-outline-danger">Unsubscribe</button>
                     </div>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center mysecret-subscription-info">
-                        <img src="https://via.placeholder.com/60/20c997/FFFFFF?text=JD" alt="Creator Avatar" class="mysecret-creator-avatar">
+                        <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
                             <h5 class="mb-1 mysecret-gold">Juan Diseño</h5>
                             <p class="mb-0 text-muted">@JuanDisenoArt</p>
-                            <p class="mb-0 text-muted">Finalizó: 15/05/2025</p>
-                            <span class="mysecret-membership-status mysecret-membership-expired">Membresía Expirada</span>
+                            <p class="mb-0 text-muted">Ends: 15/05/2025</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Membership Expired</span>
                         </div>
                     </div>
                     <div class="mysecret-subscription-actions">
-                        <button class="btn btn-sm btn-outline-info me-1">Nivel</button>
-                        <button class="btn mysecret-btn-primary">Renovar Suscripción</button>
-                        <button class="btn btn-outline-secondary" disabled>Cancelar Suscripción</button>
+                        <button class="btn btn-sm btn-outline-info me-1">Tier</button>
+                        <button class="btn mysecret-btn-primary">Renew subscription</button>
+                        <button class="btn btn-outline-danger">Unsubscribe</button>
                     </div>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center mysecret-subscription-info">
-                        <img src="https://via.placeholder.com/60/007bff/FFFFFF?text=PG" alt="Creator Avatar" class="mysecret-creator-avatar">
+                        <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
                             <h5 class="mb-1 mysecret-gold">Profe Genio</h5>
                             <p class="mb-0 text-muted">@ProfeGenio</p>
-                            <p class="mb-0 text-muted">Finaliza: 10/01/2026</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <p class="mb-0 text-muted">Ends: 10/01/2026</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active Membership</span>
                         </div>
                     </div>
                     <div class="mysecret-subscription-actions">
-                        <button class="btn btn-sm btn-outline-info me-1">Nivel</button>
-                        <button class="btn mysecret-btn-primary">Renovar Suscripción</button>
-                        <button class="btn btn-outline-danger">Cancelar Suscripción</button>
+                        <button class="btn btn-sm btn-outline-info me-1">Tier</button>
+                        <button class="btn mysecret-btn-primary">Renew subscription</button>
+                        <button class="btn btn-outline-danger">Unsubscribe</button>
                     </div>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center mysecret-subscription-info">
-                        <img src="https://via.placeholder.com/60/fd7e14/FFFFFF?text=LM" alt="Creator Avatar" class="mysecret-creator-avatar">
+                        <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
                             <h5 class="mb-1 mysecret-gold">Luna Música</h5>
                             <p class="mb-0 text-muted">@LunaMusica</p>
-                            <p class="mb-0 text-muted">Finalizó: 01/03/2025</p>
-                            <span class="mysecret-membership-status mysecret-membership-expired">Membresía Expirada</span>
+                            <p class="mb-0 text-muted">Ends: 01/03/2025</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Membership Expired</span>
                         </div>
                     </div>
                     <div class="mysecret-subscription-actions">
-                        <button class="btn btn-sm btn-outline-info me-1">Nivel</button>
-                        <button class="btn mysecret-btn-primary">Renovar Suscripción</button>
-                        <button class="btn btn-outline-secondary" disabled>Cancelar Suscripción</button>
+                        <button class="btn btn-sm btn-outline-info me-1">Tier</button>
+                        <button class="btn mysecret-btn-primary">Renew subscription</button>
+                        <button class="btn btn-outline-danger">Unsubscribe</button>
                     </div>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center mysecret-subscription-info">
-                        <img src="https://via.placeholder.com/60/6f42c1/FFFFFF?text=EA" alt="Creator Avatar" class="mysecret-creator-avatar">
+                        <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
                             <h5 class="mb-1 mysecret-gold">Explora Aventuras</h5>
                             <p class="mb-0 text-muted">@ExploraAventuras</p>
-                            <p class="mb-0 text-muted">Finaliza: 20/11/2025</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <p class="mb-0 text-muted">Ends: 20/11/2025</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active Membership</span>
                         </div>
                     </div>
                     <div class="mysecret-subscription-actions">
-                        <button class="btn btn-sm btn-outline-info me-1">Nivel</button>
-                        <button class="btn mysecret-btn-primary">Renovar Suscripción</button>
-                        <button class="btn btn-outline-danger">Cancelar Suscripción</button>
+                        <button class="btn btn-sm btn-outline-info me-1">Tier</button>
+                        <button class="btn mysecret-btn-primary">Renew subscription</button>
+                        <button class="btn btn-outline-danger">Unsubscribe</button>
                     </div>
                 </div>
-            </div>
         </section>
 
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved..</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

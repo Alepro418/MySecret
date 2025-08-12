@@ -285,45 +285,45 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Aquí podrías poner una pequeña biografía del usuario, sus intereses o cuánto tiempo lleva en la plataforma.</p>
+            <p class="lead mysecret-card-text">Here you could include a short biography of the user, their interests, or how long they've been on the platform.</p>
             <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
         <hr class="my-5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Tus Notificaciones Recientes <i class="bi bi-bell-fill mysecret-gold ms-2"></i></h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Your Recent Notifications <i class="bi bi-bell-fill mysecret-gold ms-2"></i></h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="mysecret-notification-item">
-                        <span class="notification-unread-badge">NUEVA</span>
+                        <span class="notification-unread-badge">NEW</span>
                         <div class="notification-icon">
                             <i class="bi bi-pencil-square"></i>
                         </div>
                         <div class="notification-content">
-                            <p class="mb-1"><span class="mysecret-gold-text">¡Nuevo contenido de @creador_uno!</span></p>
-                            <p class="notification-description">"Consejos para Mejorar tu Creatividad" ha sido publicado.</p>
-                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Ver publicación</a>
+                            <p class="mb-1"><span class="mysecret-gold-text">New content from @creador_uno!</span></p>
+                            <p class="notification-description">"Tips to Improve Your Creativity" has been published.</p>
+                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">See post</a>
                         </div>
                         <div class="notification-actions">
-                            <span class="notification-time">Hace 5 horas</span>
-                            <button class="btn mysecret-btn-primary btn-sm"><i class="bi bi-check-circle me-1"></i> Marcar como leída</button>
+                            <span class="notification-time">5 hours ago</span>
+                            <button class="btn mysecret-btn-primary btn-sm"><i class="bi bi-check-circle me-1"></i> Mark as read</button>
                         </div>
                     </div>
 
                     <div class="mysecret-notification-item">
-                        <span class="notification-unread-badge">NUEVO</span>
+                        <span class="notification-unread-badge">NEW</span>
                         <div class="notification-icon">
                             <i class="bi bi-chat-dots"></i>
                         </div>
                         <div class="notification-content">
-                            <p class="mb-1"><span class="mysecret-gold-text">Tienes un mensaje nuevo de @music_vibes.</span></p>
-                            <p class="notification-description">Te ha enviado un mensaje directo. ¡No te lo pierdas!</p>
-                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Ir a mensajes</a>
+                            <p class="mb-1"><span class="mysecret-gold-text">You have a new message from @music_vibes.</span></p>
+                            <p class="notification-description">He's sent you a direct message. Don't miss it!</p>
+                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Go to Messages</a>
                         </div>
                         <div class="notification-actions">
-                            <span class="notification-time">Hace 1 día</span>
-                            <button class="btn mysecret-btn-primary btn-sm"><i class="bi bi-check-circle me-1"></i> Marcar como leída</button>
+                            <span class="notification-time">1 day ago</span>
+                            <button class="btn mysecret-btn-primary btn-sm"><i class="bi bi-check-circle me-1"></i> Mark as read</button>
                         </div>
                     </div>
 
@@ -332,13 +332,13 @@
                             <i class="bi bi-credit-card"></i>
                         </div>
                         <div class="notification-content">
-                            <p class="mb-1"><span class="mysecret-gold-text">¡Renovación de suscripción!</span></p>
-                            <p class="notification-description">Tu suscripción a @fotografo_city se renovará el 5 de julio de 2025 por $8.00.</p>
-                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Administrar suscripción</a>
+                            <p class="mb-1"><span class="mysecret-gold-text">Subscription renewal!</span></p>
+                            <p class="notification-description">Your @fotografo_city subscription will renew on July 5, 2025, for $8.00.</p>
+                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Manage subscription</a>
                         </div>
                         <div class="notification-actions">
-                            <span class="notification-time">Hace 3 días</span>
-                            <button class="btn mysecret-btn-outline btn-sm"><i class="bi bi-check-circle me-1"></i> Marcar como leída</button>
+                            <span class="notification-time">3 days ago</span>
+                            <button class="btn mysecret-btn-outline btn-sm"><i class="bi bi-check-circle me-1"></i> Mark as read</button>
                         </div>
                     </div>
 
@@ -347,22 +347,22 @@
                             <i class="bi bi-chat-text"></i>
                         </div>
                         <div class="notification-content">
-                            <p class="mb-1"><span class="mysecret-gold-text">@otro_fan_123 comentó en tu actividad.</span></p>
-                            <p class="notification-description">"¡Me encantó tu reseña del último video de @creador_uno!"</p>
-                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">Ver comentario</a>
+                            <p class="mb-1"><span class="mysecret-gold-text">@otro_fan_123 commented on your activity.</span></p>
+                            <p class="notification-description">"I loved your review of @creador_uno's latest video!"</p>
+                            <a href="#" class="mysecret-card-text-small text-muted text-decoration-none d-block mt-1">See comment</a>
                         </div>
                         <div class="notification-actions">
                             <span class="notification-time">Hace 5 días</span>
-                            <button class="btn mysecret-btn-outline btn-sm"><i class="bi bi-check-circle me-1"></i> Marcar como leída</button>
+                            <button class="btn mysecret-btn-outline btn-sm"><i class="bi bi-check-circle me-1"></i> Mark as read</button>
                         </div>
                     </div>
 
                     <div class="col-12 text-center mt-4">
                         <div class="mysecret-no-notifications-card">
                             <i class="bi bi-check-all"></i>
-                            <p class="lead mb-0">¡Felicidades! No tienes notificaciones pendientes.</p>
-                            <p class="mysecret-card-text-small text-muted mt-2">Mantente al día revisando esta sección regularmente.</p>
-                            <a href="#" class="btn mysecret-btn-primary mt-3"><i class="bi bi-bell me-2"></i>Ver todas las notificaciones</a>
+                            <p class="lead mb-0">Congratulations! You have no pending notifications.</p>
+                            <p class="mysecret-card-text-small text-muted mt-2">Stay up to date by checking this section regularly..</p>
+                            <a href="#" class="btn mysecret-btn-primary mt-3"><i class="bi bi-bell me-2"></i>See all notifications</a>
                         </div>
                     </div>
                 </div>

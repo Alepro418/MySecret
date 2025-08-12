@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where Your Fantasy is Our Reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,7 +183,7 @@
         }
     </style>
 </head>
-<body translate="yes">
+<body translate="no">
     <nav class="navbar navbar-expand-lg mysecret-navbar py-3">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center mysecret-logo me-auto" href="index.php">
@@ -205,7 +205,7 @@
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -225,8 +225,8 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Perfil de Usuario</h1>
-            <p class="lead mysecret-subtitle">Administra tu perfil y explora tus conexiones.</p>
+            <h1 class="display-3 mysecret-title">Account Profile</h1>
+            <p class="lead mysecret-subtitle">Manage your profile and explore your connections.</p>
         </div>
     </header>
 
@@ -235,77 +235,77 @@
             <img src="Assets/Test_1.jpg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Aishah Sofey <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@aishasofeyofficial</p>
-            <p class="lead mysecret-card-text">Bienvenido a tu panel de usuario. Aquí puedes gestionar tu actividad.</p>
-            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Editar Perfil</button>
+            <p class="lead mysecret-card-text">Welcome to your user dashboard. Here you can manage your activity.</p>
+            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
         
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Configuración de Cuenta</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Account Settings</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-person-circle display-4"></i>
-                        <h5 class="card-title">Editar Perfil</h5>
-                        <p class="card-text">Actualiza tu información personal, avatar y biografía.</p>
-                        <a href="edit_profile_creator.php" class="btn mysecret-btn-outline mt-3">Ir a Editar Perfil</a>
+                        <h5 class="card-title">Edit Profile</h5>
+                        <p class="card-text">Update your personal information, avatar, and bio.</p>
+                        <a href="edit_profile_creator.php" class="btn mysecret-btn-outline mt-3">Go to Edit Profile</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-key-fill display-4"></i>
-                        <h5 class="card-title">Cambiar Contraseña</h5>
-                        <p class="card-text">Mantén tu cuenta segura actualizando tu contraseña regularmente.</p>
-                        <a href="change_password.php" class="btn mysecret-btn-outline mt-3">Cambiar Contraseña</a>
+                        <h5 class="card-title">Change Password</h5>
+                        <p class="card-text">Keep your account secure by updating your password regularly.</p>
+                        <a href="change_password.php" class="btn mysecret-btn-outline mt-3">Change Password</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-bell-fill display-4"></i>
-                        <h5 class="card-title">Preferencias de Notificación</h5>
-                        <p class="card-text">Controla cómo y cuándo recibes las alertas de MySecret.</p>
-                        <a href="notification_settings.php" class="btn mysecret-btn-outline mt-3">Gestionar Notificaciones</a>
+                        <h5 class="card-title">Notification Preferences</h5>
+                        <p class="card-text">Control how and when you receive MySecret alerts.</p>
+                        <a href="notification_settings.php" class="btn mysecret-btn-outline mt-3">Manage Notifications</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-shield-lock-fill display-4"></i>
-                        <h5 class="card-title">Configuración de Privacidad</h5>
-                        <p class="card-text">Define quién puede ver tu actividad y tu información en la plataforma.</p>
-                        <a href="privacy_settings.php" class="btn mysecret-btn-outline mt-3">Ajustar Privacidad</a>
+                        <h5 class="card-title">Privacy Settings</h5>
+                        <p class="card-text">Define who can see your activity and information on the platform.</p>
+                        <a href="privacy_settings.php" class="btn mysecret-btn-outline mt-3">Adjust Privacy</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-credit-card-fill display-4"></i>
-                        <h5 class="card-title">Configurar Métodos de Pago</h5>
-                        <p class="card-text">Administra tus tarjetas y opciones de pago para tus suscripciones.</p>
-                        <a href="payment_methods.php" class="btn mysecret-btn-outline mt-3">Configurar Pagos</a>
+                        <h5 class="card-title">Configure Payment Methods</h5>
+                        <p class="card-text">Manage your cards and payment options for your subscriptions.</p>
+                        <a href="payment_methods.php" class="btn mysecret-btn-outline mt-3">Configure Payments</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-star-fill display-4"></i>
-                        <h5 class="card-title">Mis Suscripciones</h5>
-                        <p class="card-text">Revisa y gestiona el estado de todas tus suscripciones activas y pasadas.</p>
-                        <a href="subscriptions.php" class="btn mysecret-btn-outline mt-3">Ver Suscripciones</a>
+                        <h5 class="card-title">My Subscriptions</h5>
+                        <p class="card-text">Review and manage the status of all your active and past subscriptions.</p>
+                        <a href="subscriptions.php" class="btn mysecret-btn-outline mt-3">View Subscriptions</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-file-earmark-person-fill display-4"></i>
-                        <h5 class="card-title">Descargar Datos</h5>
-                        <p class="card-text">Solicita una copia de tus datos personales almacenados en MySecret.</p>
-                        <a href="download_data.php" class="btn mysecret-btn-outline mt-3">Solicitar Datos</a>
+                        <h5 class="card-title">Download Data</h5>
+                        <p class="card-text">Request a copy of your personal data stored on MySecret.</p>
+                        <a href="download_data.php" class="btn mysecret-btn-outline mt-3">Request Data</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mysecret-setting-card h-100">
                         <i class="bi bi-person-x-fill display-4"></i>
-                        <h5 class="card-title">Eliminar Cuenta</h5>
-                        <p class="card-text">Si deseas, puedes iniciar el proceso para eliminar tu cuenta de forma permanente.</p>
-                        <a href="delete_account.php" class="btn btn-danger mt-3">Eliminar Cuenta</a>
+                        <h5 class="card-title">Delete Account</h5>
+                        <p class="card-text">If you wish, you can start the process to permanently delete your account.</p>
+                        <a href="delete_account.php" class="btn btn-danger mt-3">Delete Account</a>
                     </div>
                 </div>
             </div>

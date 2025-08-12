@@ -236,22 +236,22 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Aquí podrías poner una pequeña biografía del usuario, sus intereses o cuánto tiempo lleva en la plataforma.</p>
+            <p class="lead mysecret-card-text">Here you could include a short biography of the user, their interests, or how long they've been on the platform.</p>
             <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
         <hr class="my-5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Tu Actividad Reciente</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Your Recent Activity</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col-12 mb-4">
                     <div class="card mysecret-info-card h-100 p-4 text-center d-flex flex-column justify-content-center align-items-center">
                         <i class="bi bi-eye-fill display-3 mysecret-gold mb-3"></i>
-                        <h4 class="card-title mysecret-gold-text mb-2">¡Has explorado mucho!</h4>
-                        <p class="card-text mysecret-card-text fs-4 mb-3">En los últimos 30 días, has visto <span class="mysecret-gold-text">42</span> piezas de contenido.</p>
-                        <p class="card-text mysecret-card-text-small text-muted">Mantente al día con lo que te interesa.</p>
-                        <a href="#" class="btn mysecret-btn-primary mt-3"><i class="bi bi-clock-history me-2"></i>Ver Historial Completo</a>
+                        <h4 class="card-title mysecret-gold-text mb-2">You've explored a lot!</h4>
+                        <p class="card-text mysecret-card-text fs-4 mb-3">In the last 30 days, you have seen <span class="mysecret-gold-text">42</span> pieces of content.</p>
+                        <p class="card-text mysecret-card-text-small text-muted">Stay up to date with what interests you.</p>
+                        <a href="#" class="btn mysecret-btn-primary mt-3"><i class="bi bi-clock-history me-2"></i>See Full History</a>
                     </div>
                 </div>
 
@@ -259,10 +259,10 @@
                     <div class="card mysecret-info-card h-100">
                         <img src="Assets/content_example1.jpeg" class="card-img-top" alt="Content Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-gold-text">Artículo: "Las 5 Tendencias del Arte Digital"</h5>
-                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @creador_uno | <i class="bi bi-calendar-fill"></i> Visto: 28 de junio de 2025</p>
-                            <p class="card-text mysecret-card-text-small">Descubre las innovaciones que están transformando el mundo del arte. <span class="badge bg-secondary">#ArteDigital</span></p>
-                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Ir al Contenido</a>
+                            <h5 class="card-title mysecret-gold-text">Article: "The 5 Trends in Digital Art"</h5>
+                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @creator_one | <i class="bi bi-calendar-fill"></i> Viewed: June 28, 2025</p>
+                            <p class="card-text mysecret-card-text-small">Discover the innovations that are transforming the art world. <span class="badge bg-secondary">#DigitalArt</span></p>
+                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Go to Content</a>
                         </div>
                     </div>
                 </div>
@@ -271,10 +271,10 @@
                     <div class="card mysecret-info-card h-100">
                         <img src="Assets/content_example2.jpeg" class="card-img-top" alt="Content Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-gold-text">Video: "Mi Proceso Creativo para Ilustraciones"</h5>
-                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @creador_dos_art | <i class="bi bi-calendar-fill"></i> Visto: 25 de junio de 2025</p>
-                            <p class="card-text mysecret-card-text-small">Un vistazo detrás de escenas de cómo doy vida a mis personajes. <span class="badge bg-secondary">#Ilustración</span></p>
-                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Ir al Contenido</a>
+                            <h5 class="card-title mysecret-gold-text">Video: "My Creative Process for Illustrations"</h5>
+                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @creator_two_art | <i class="bi bi-calendar-fill"></i> Viewed: June 25, 2025</p>
+                            <p class="card-text mysecret-card-text-small">A behind-the-scenes look at how I bring my characters to life. <span class="badge bg-secondary">#Illustration</span></p>
+                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Go to Content</a>
                         </div>
                     </div>
                 </div>
@@ -283,10 +283,10 @@
                     <div class="card mysecret-info-card h-100">
                         <img src="Assets/content_example3.jpeg" class="card-img-top" alt="Content Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-gold-text">Podcast: "Historias Inspiradoras de Músicos"</h5>
-                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @music_vibes | <i class="bi bi-calendar-fill"></i> Visto: 20 de junio de 2025</p>
-                            <p class="card-text mysecret-card-text-small">Episodio especial con entrevistas a talentos emergentes. <span class="badge bg-secondary">#Podcast</span></p>
-                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Ir al Contenido</a>
+                            <h5 class="card-title mysecret-gold-text">Podcast: "Inspiring Stories of Musicians"</h5>
+                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @music_vibes | <i class="bi bi-calendar-fill"></i> Viewed: June 20, 2025</p>
+                            <p class="card-text mysecret-card-text-small">Special episode featuring interviews with emerging talents. <span class="badge bg-secondary">#Podcast</span></p>
+                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Go to Content</a>
                         </div>
                     </div>
                 </div>
@@ -295,10 +295,10 @@
                     <div class="card mysecret-info-card h-100">
                         <img src="Assets/content_example4.jpeg" class="card-img-top" alt="Content Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-gold-text">Publicación: "Tips para Escritores Principiantes"</h5>
-                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @escritor_pro | <i class="bi bi-calendar-fill"></i> Visto: 15 de junio de 2025</p>
-                            <p class="card-text mysecret-card-text-small">Supera el bloqueo del escritor con estos consejos prácticos. <span class="badge bg-secondary">#Escritura</span></p>
-                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Ir al Contenido</a>
+                            <h5 class="card-title mysecret-gold-text">Publication: "Tips for Beginning Writers"</h5>
+                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @writer_pro | <i class="bi bi-calendar-fill"></i> Viewed: June 15, 2025</p>
+                            <p class="card-text mysecret-card-text-small">Overcome writer's block with these practical tips. <span class="badge bg-secondary">#Writing</span></p>
+                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Go to Content</a>
                         </div>
                     </div>
                 </div>
@@ -307,10 +307,10 @@
                     <div class="card mysecret-info-card h-100">
                         <img src="Assets/content_example5.jpeg" class="card-img-top" alt="Content Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title mysecret-gold-text">Galería de Fotos: "Paisajes Urbanos"</h5>
-                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @fotografo_city | <i class="bi bi-calendar-fill"></i> Visto: 10 de junio de 2025</p>
-                            <p class="card-text mysecret-card-text-small">Una colección de mis mejores tomas de la ciudad al atardecer. <span class="badge bg-secondary">#Fotografía</span></p>
-                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Ir al Contenido</a>
+                            <h5 class="card-title mysecret-gold-text">Photo Gallery: "Urban Landscapes"</h5>
+                            <p class="card-text text-muted small"><i class="bi bi-person-fill"></i> @city_photographer | <i class="bi bi-calendar-fill"></i> Viewed: June 10, 2025</p>
+                            <p class="card-text mysecret-card-text-small">A collection of my best shots of the city at sunset. <span class="badge bg-secondary">#Photograph</span></p>
+                            <a href="#" class="btn mysecret-btn-outline btn-sm mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Go to Content</a>
                         </div>
                     </div>
                 </div>
@@ -318,9 +318,9 @@
                 <div class="col-12 center-content-div">
                     <div class="mysecret-empty-card">
                         <i class="bi bi-journal-check display-3 mysecret-gold mb-3"></i> <div class="mysecret-text">
-                            <p class="lead mb-3">Parece que no has visto contenido en un tiempo.</p> <p class="mysecret-card-text-small">¡Descubre las últimas novedades y se el primero enterarte</p>
+                            <p class="lead mb-3">Looks like you haven't watched any content in a while.</p> <p class="mysecret-card-text-small">Discover the latest news and be the first to know!</p>
                         </div>
-                        <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-search me-2"></i>Explorar Contenido Ahora</a> </div>
+                        <a href="#" class="btn mysecret-btn-primary"><i class="bi bi-search me-2"></i>Explore Content Now</a> </div>
                 </div>
             </div>
         </section>

@@ -168,7 +168,7 @@
                         <a class="nav-link mysecret-nav-link" href="../../processes/log_out.php"><i class="bi bi-person-x-fill me-2"></i>Log out</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <img src="Assets/Test_1.jpg" alt="Avatar del Fan" class="mysecret-profile-avatar img-fluid">
+                        <img src="Assets/Test_1.jpg" alt="Creator avatar" class="mysecret-profile-avatar img-fluid">
                     </li>
                 </ul>
             </div>
@@ -177,83 +177,83 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mb-4 mysecret-title">Mis Notificaciones</h1>
-            <p class="lead mb-5 mysecret-subtitle">Mantente al día con las últimas novedades de tus creadores favoritos.</p>
-            <a href="#notifications-list" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-eye-fill me-2"></i>Ver Novedades</a>
+            <h1 class="display-3 mb-4 mysecret-title">Creator Notifications</h1>
+            <p class="lead mb-5 mysecret-subtitle">Stay informed about your fans, content, and earnings.</p>
+            <a href="#notifications-list" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-eye-fill me-2"></i>View Recent Activity</a>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <section class="mb-5" id="notifications-list">
-            <h2 class="text-center mb-4 mysecret-section-title">Actividad Reciente</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Recent Activity</h2>
             <div class="card mysecret-card p-0">
                 <div class="card-body p-0">
                     <div class="notification-item notification-unread">
-                        <i class="bi bi-image-fill notification-icon"></i>
+                        <i class="bi bi-person-plus-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Nueva publicación de Aisha Sofey</h5>
-                                <span class="notification-time">Hace 5 minutos</span>
+                                <h5 class="notification-title">New subscriber: John Doe</h5>
+                                <span class="notification-time">5 minutes ago</span>
                             </div>
-                            <p class="notification-text">Aisha Sofey ha compartido un nuevo set de fotos exclusivo: "Detrás de Escenas: Sesión de Verano".</p>
+                            <p class="notification-text">John Doe has subscribed to your content. Welcome your new fan!</p>
                             <div class="notification-actions">
-                                <a href="view_post.php?id=126" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-eye-fill me-1"></i>Ver Publicación</a>
+                                <a href="view_subscriber.php?id=johndoe" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-person-fill me-1"></i>View Profile</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="notification-item notification-unread">
-                        <i class="bi bi-chat-dots-fill notification-icon"></i>
+                        <i class="bi bi-currency-dollar notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Nuevo mensaje de Sophie Rain</h5>
-                                <span class="notification-time">Hace 30 minutos</span>
+                                <h5 class="notification-title">New Tip from Jane Smith</h5>
+                                <span class="notification-time">30 minutes ago</span>
                             </div>
-                            <p class="notification-text">Sophie Rain te ha enviado un mensaje directo. ¡Revisa tu bandeja de entrada!</p>
+                            <p class="notification-text">Jane Smith sent you a $5 tip with the message "Love your work!".</p>
                             <div class="notification-actions">
-                                <a href="messages.php?creator=sophierain" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-envelope-fill me-1"></i>Ir a Mensajes</a>
+                                <a href="transactions.php" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-wallet-fill me-1"></i>View Earnings</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="notification-item notification-read">
-                        <i class="bi bi-star-fill notification-icon"></i>
+                        <i class="bi bi-chat-text-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Suscripción renovada a Aisha Sofey</h5>
-                                <span class="notification-time">Hace 1 día</span>
+                                <h5 class="notification-title">New comment on your post</h5>
+                                <span class="notification-time">1 day ago</span>
                             </div>
-                            <p class="notification-text">¡Tu suscripción mensual a Aisha Sofey ha sido renovada con éxito! Disfruta del contenido.</p>
+                            <p class="notification-text">A fan commented on your latest post: "Summer Vibes Photoset".</p>
                             <div class="notification-actions">
-                                <a href="subscriptions_fan.php" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-credit-card-fill me-1"></i>Gestionar Suscripción</a>
+                                <a href="view_post.php?id=126" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-eye-fill me-1"></i>View post</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="notification-item notification-read">
-                        <i class="bi bi-megaphone-fill notification-icon"></i>
+                        <i class="bi bi-check-circle-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Anuncio de Julia Filippo</h5>
-                                <span class="notification-time">Hace 2 días</span>
+                                <h5 class="notification-title">Payout processed</h5>
+                                <span class="notification-time">2 days ago</span>
                             </div>
-                            <p class="notification-text">Julia Filippo ha anunciado un nuevo sorteo exclusivo para sus suscriptores. ¡Participa!</p>
+                            <p class="notification-text">Your latest payout of $250.00 has been successfully processed.</p>
                             <div class="notification-actions">
-                                <a href="view_post.php?id=127" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-bullseye-fill me-1"></i>Ver Anuncio</a>
+                                <a href="transactions.php" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-credit-card-fill me-1"></i>See Transactions</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="notification-item notification-read">
-                        <i class="bi bi-person-plus-fill notification-icon"></i>
+                        <i class="bi bi-trophy-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">¡Nuevo creador sugerido!</h5>
-                                <span class="notification-time">Hace 3 días</span>
+                                <h5 class="notification-title">Milestone Achieved!</h5>
+                                <span class="notification-time">3 days ago</span>
                             </div>
-                            <p class="notification-text">MySecret te sugiere a "Madzy23" basado en tus intereses. ¡Podría gustarte su contenido!</p>
+                            <p class="notification-text">Congratulations, you've reached 100 subscribers! Keep up the great work.</p>
                             <div class="notification-actions">
-                                <a href="creator_profile.php?id=madzy" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-person-fill me-1"></i>Ver Perfil</a>
+                                <a href="creator_dashboard.php" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-graph-up-arrow me-1"></i>View Dashboard</a>
                             </div>
                         </div>
                     </div>
@@ -261,19 +261,19 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <button class="btn mysecret-btn-primary"><i class="bi bi-arrow-clockwise me-2"></i>Cargar Notificaciones Antiguas</button>
-                <button class="btn mysecret-btn-outline ms-2"><i class="bi bi-check-double me-2"></i>Marcar todo como leído</button>
+                <button class="btn mysecret-btn-primary"><i class="bi bi-arrow-clockwise me-2"></i>Load old notifications</button>
+                <button class="btn mysecret-btn-outline ms-2"><i class="bi bi-check-double me-2"></i>Mark all as read</button>
             </div>
         </section>
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Policy of Privacy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

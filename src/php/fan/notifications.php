@@ -179,27 +179,27 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mb-4 mysecret-title">Mis Notificaciones</h1>
-            <p class="lead mb-5 mysecret-subtitle">Mantente al día con las últimas novedades de tus creadores favoritos.</p>
-            <a href="#notifications-list" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-eye-fill me-2"></i>Ver Novedades</a>
+            <h1 class="display-3 mb-4 mysecret-title">My Notifications</h1>
+            <p class="lead mb-5 mysecret-subtitle">Stay up to date with the latest news from your favorite creators.</p>
+            <a href="#notifications-list" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-eye-fill me-2"></i>See What's New</a>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <section class="mb-5" id="notifications-list">
-            <h2 class="text-center mb-4 mysecret-section-title">Actividad Reciente</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Recent Activity</h2>
             <div class="card mysecret-card p-0">
                 <div class="card-body p-0">
                     <div class="notification-item notification-unread">
                         <i class="bi bi-image-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Nueva publicación de Aisha Sofey</h5>
-                                <span class="notification-time">Hace 5 minutos</span>
+                                <h5 class="notification-title">New post by Aisha Sofey</h5>
+                                <span class="notification-time">5 minutes ago</span>
                             </div>
-                            <p class="notification-text">Aisha Sofey ha compartido un nuevo set de fotos exclusivo: "Detrás de Escenas: Sesión de Verano".</p>
+                            <p class="notification-text">Aisha Sofey has shared an exclusive new photo set: "Behind the Scenes: Summer Shoot."</p>
                             <div class="notification-actions">
-                                <a href="view_post.php?id=126" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-eye-fill me-1"></i>Ver Publicación</a>
+                                <a href="view_post.php?id=126" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-eye-fill me-1"></i>See Publication</a>
                             </div>
                         </div>
                     </div>
@@ -208,12 +208,12 @@
                         <i class="bi bi-chat-dots-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Nuevo mensaje de Sophie Rain</h5>
-                                <span class="notification-time">Hace 30 minutos</span>
+                                <h5 class="notification-title">New message from Sophie Rain</h5>
+                                <span class="notification-time">30 minutes ago</span>
                             </div>
-                            <p class="notification-text">Sophie Rain te ha enviado un mensaje directo. ¡Revisa tu bandeja de entrada!</p>
+                            <p class="notification-text">Sophie Rain has sent you a direct message. Check your inbox!</p>
                             <div class="notification-actions">
-                                <a href="messages.php?creator=sophierain" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-envelope-fill me-1"></i>Ir a Mensajes</a>
+                                <a href="messages.php?creator=sophierain" class="btn mysecret-btn-primary btn-sm"><i class="bi bi-envelope-fill me-1"></i>Go to Messages</a>
                             </div>
                         </div>
                     </div>
@@ -222,12 +222,12 @@
                         <i class="bi bi-star-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Suscripción renovada a Aisha Sofey</h5>
-                                <span class="notification-time">Hace 1 día</span>
+                                <h5 class="notification-title">Renewed subscription to Aisha Sofey</h5>
+                                <span class="notification-time">1 day ago</span>
                             </div>
-                            <p class="notification-text">¡Tu suscripción mensual a Aisha Sofey ha sido renovada con éxito! Disfruta del contenido.</p>
+                            <p class="notification-text">Your monthly subscription to Aisha Sofey has been successfully renewed! Enjoy the content.</p>
                             <div class="notification-actions">
-                                <a href="subscriptions_fan.php" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-credit-card-fill me-1"></i>Gestionar Suscripción</a>
+                                <a href="subscriptions_fan.php" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-credit-card-fill me-1"></i>Manage Subscription</a>
                             </div>
                         </div>
                     </div>
@@ -236,12 +236,12 @@
                         <i class="bi bi-megaphone-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">Anuncio de Julia Filippo</h5>
-                                <span class="notification-time">Hace 2 días</span>
+                                <h5 class="notification-title">Julia Filippo Announcement</h5>
+                                <span class="notification-time">2 days ago</span>
                             </div>
-                            <p class="notification-text">Julia Filippo ha anunciado un nuevo sorteo exclusivo para sus suscriptores. ¡Participa!</p>
+                            <p class="notification-text">Julia Filippo has announced a new giveaway exclusive to her subscribers. Enter!</p>
                             <div class="notification-actions">
-                                <a href="view_post.php?id=127" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-bullseye-fill me-1"></i>Ver Anuncio</a>
+                                <a href="view_post.php?id=127" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-bullseye-fill me-1"></i>View Announcement</a>
                             </div>
                         </div>
                     </div>
@@ -250,12 +250,12 @@
                         <i class="bi bi-person-plus-fill notification-icon"></i>
                         <div class="notification-content">
                             <div class="notification-header">
-                                <h5 class="notification-title">¡Nuevo creador sugerido!</h5>
-                                <span class="notification-time">Hace 3 días</span>
+                                <h5 class="notification-title">New suggested creator!</h5>
+                                <span class="notification-time">3 days ago</span>
                             </div>
-                            <p class="notification-text">MySecret te sugiere a "Madzy23" basado en tus intereses. ¡Podría gustarte su contenido!</p>
+                            <p class="notification-text">MySecret suggests "Madzy23" based on your interests. You might like their content!</p>
                             <div class="notification-actions">
-                                <a href="creator_profile.php?id=madzy" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-person-fill me-1"></i>Ver Perfil</a>
+                                <a href="creator_profile.php?id=madzy" class="btn mysecret-btn-outline btn-sm"><i class="bi bi-person-fill me-1"></i>View Profile</a>
                             </div>
                         </div>
                     </div>
@@ -263,19 +263,19 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <button class="btn mysecret-btn-primary"><i class="bi bi-arrow-clockwise me-2"></i>Cargar Notificaciones Antiguas</button>
-                <button class="btn mysecret-btn-outline ms-2"><i class="bi bi-check-double me-2"></i>Marcar todo como leído</button>
+                <button class="btn mysecret-btn-primary"><i class="bi bi-arrow-clockwise me-2">Load Old Notifications</i></button>
+                <button class="btn mysecret-btn-outline ms-2"><i class="bi bi-check-double me-2">Mark all as read</i></button>
             </div>
         </section>
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved..</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>

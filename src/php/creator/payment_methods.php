@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where your fantasy is our reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,7 +138,7 @@
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -157,28 +157,28 @@
     </nav>
 
     <main class="container my-5 py-3">
-        <h1 class="mysecret-section-title mb-5">Configurar Métodos de Pago</h1>
+        <h1 class="mysecret-section-title mb-5">Set up Payment Methods</h1>
 
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card mysecret-card-bg mb-5">
                     <div class="card-header mysecret-card-header">
-                        <i class="bi bi-credit-card-2-front-fill me-2 mysecret-payment-icon"></i> Añadir Nuevo Método de Pago
+                        <i class="bi bi-credit-card-2-front-fill me-2 mysecret-payment-icon"></i> Add New Payment Method
                     </div>
                     <div class="card-body">
                         <form>
                             <div class="mb-3">
-                                <label for="cardName" class="form-label mysecret-form-label">Nombre en la Tarjeta</label>
-                                <input type="text" class="form-control mysecret-form-control" id="cardName" placeholder="Nombre Apellido" required>
+                                <label for="cardName" class="form-label mysecret-form-label">Name on Card</label>
+                                <input type="text" class="form-control mysecret-form-control" id="cardName" placeholder="Name Surname" required>
                             </div>
                             <div class="mb-3">
-                                <label for="cardNumber" class="form-label mysecret-form-label">Número de Tarjeta</label>
+                                <label for="cardNumber" class="form-label mysecret-form-label">Card Number</label>
                                 <input type="text" class="form-control mysecret-form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="expiryDate" class="form-label mysecret-form-label">Fecha de Caducidad (MM/AA)</label>
-                                    <input type="text" class="form-control mysecret-form-control" id="expiryDate" placeholder="MM/AA" required>
+                                    <label for="expiryDate" class="form-label mysecret-form-label">Expiration Date (MM/YY)</label>
+                                    <input type="text" class="form-control mysecret-form-control" id="expiryDate" placeholder="MM/YY" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="cvv" class="form-label mysecret-form-label">CVV</label>
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn mysecret-btn-outline">Guardar Método de Pago</button>
+                                <button type="submit" class="btn mysecret-btn-outline">Save Payment Method</button>
                             </div>
                         </form>
                     </div>
@@ -194,11 +194,11 @@
 
                 <div class="card mysecret-card-bg">
                     <div class="card-header mysecret-card-header">
-                        <i class="bi bi-wallet-fill me-2 mysecret-payment-icon"></i> Tus Métodos de Pago
+                        <i class="bi bi-wallet-fill me-2 mysecret-payment-icon"></i> Your Payment Methods
                     </div>
                     <div class="card-body">
                         <div class="alert alert-info mysecret-form-control" role="alert">
-                            No tienes métodos de pago guardados. ¡Añade uno para empezar!
+                            You have no saved payment methods. Add one to get started!
                         </div>
                         <div class="payment-method-item d-none"> <div>
                                 <i class="bi bi-credit-card-fill mysecret-gold me-3"></i>

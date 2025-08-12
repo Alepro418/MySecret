@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where Your Fantasy is Our Reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,7 +183,7 @@
         }
     </style>
 </head>
-<body translate="yes">
+<body translate="no">
     <nav class="navbar navbar-expand-lg mysecret-navbar py-3">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center mysecret-logo me-auto" href="index.php">
@@ -225,69 +225,69 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Editar Perfil de Creador</h1>
-            <p class="lead mysecret-subtitle">Personaliza tu presencia en MySecret.</p>
+            <h1 class="display-3 mysecret-title">Edit Creator Profile</h1>
+            <p class="lead mysecret-subtitle">Customize your presence on MySecret.</p>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <div class="text-center mb-5">
             <img src="Assets/Test_1.jpg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
-            <p class="text-muted mt-2">Haz clic en la imagen para cambiar tu avatar</p>
+            <p class="text-muted mt-2">Click the image to change your avatar</p>
         </div>
         
         <form action="save_profile.php" method="POST" enctype="multipart/form-data" class="mysecret-form">
             <div class="row g-4 mb-4"> 
                 <div class="col-lg-6">
                     <div class="card mysecret-setting-card h-100 p-4">
-                        <h5 class="mysecret-form-label mb-3">Información Personal</h5>
+                        <h5 class="mysecret-form-label mb-3">Personal Information</h5>
                         <div class="mb-3">
-                            <label for="profileName" class="form-label mysecret-form-label">Nombre de Usuario</label>
+                            <label for="profileName" class="form-label mysecret-form-label">Username</label>
                             <input type="text" class="form-control mysecret-form-control" id="profileName" value="Aishah Sofey" required>
                         </div>
                         <div class="mb-3">
-                            <label for="profileHandle" class="form-label mysecret-form-label">Alias (@)</label>
+                            <label for="profileHandle" class="form-label mysecret-form-label">Handle (@)</label>
                             <input type="text" class="form-control mysecret-form-control" id="profileHandle" value="@aishasofeyofficial" required>
                         </div>
                         <div class="mb-3">
-                            <label for="profileEmail" class="form-label mysecret-form-label">Correo Electrónico</label>
+                            <label for="profileEmail" class="form-label mysecret-form-label">Email Address</label>
                             <input type="email" class="form-control mysecret-form-control" id="profileEmail" value="aishah.sofey@example.com" required>
                         </div>
                         <div class="mb-3">
-                            <label for="profileBio" class="form-label mysecret-form-label">Biografía</label>
-                            <textarea class="form-control mysecret-form-control" id="profileBio" rows="4">Bienvenido a mi espacio en MySecret. Aquí comparto contenido exclusivo y me conecto directamente con mis seguidores más leales. ¡Gracias por tu apoyo!</textarea>
+                            <label for="profileBio" class="form-label mysecret-form-label">Biography</label>
+                            <textarea class="form-control mysecret-form-control" id="profileBio" rows="4">Welcome to my space on MySecret. Here I share exclusive content and connect directly with my most loyal followers. Thank you for your support!</textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="card mysecret-setting-card h-100 p-4">
-                        <h5 class="mysecret-form-label mb-3">Contenido de Creador</h5>
+                        <h5 class="mysecret-form-label mb-3">Creator Content</h5>
                         <div class="mb-3">
-                            <label for="creatorPortfolio" class="form-label mysecret-form-label">Enlace a Portafolio/Red Social (Opcional)</label>
-                            <input type="url" class="form-control mysecret-form-control" id="creatorPortfolio" placeholder="Ej: https://instagram.com/aishasofey" value="https://instagram.com/aishasofeyofficial">
-                            <small class="form-text text-muted">Añade un enlace donde tus suscriptores puedan ver más de tu trabajo.</small>
+                            <label for="creatorPortfolio" class="form-label mysecret-form-label">Link to Portfolio/Social Media (Optional)</label>
+                            <input type="url" class="form-control mysecret-form-control" id="creatorPortfolio" placeholder="e.g.: https://instagram.com/aishasofey" value="https://instagram.com/aishasofeyofficial">
+                            <small class="form-text text-muted">Add a link where your subscribers can see more of your work.</small>
                         </div>
                         <div class="mb-3 mysecret-file-upload-card">
-                            <label for="profileBanner" class="form-label mysecret-form-label">Subir Banner de Perfil</label>
+                            <label for="profileBanner" class="form-label mysecret-form-label">Upload Profile Banner</label>
                             <input class="form-control mysecret-file-input" type="file" id="profileBanner" accept="image/*">
-                            <small class="form-text text-muted">Imagen recomendada: 1200x300px para una mejor visualización.</small>
+                            <small class="form-text text-muted">Recommended image: 1200x300px for a better view.</small>
                         </div>
                         <div class="mb-3 mysecret-toggle-switch">
-                            <h6 class="mysecret-form-label">Visibilidad de Estadísticas</h6>
+                            <h6 class="mysecret-form-label">Statistics Visibility</h6>
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" id="showSubscribers" checked>
-                                <label class="form-check-label text-white" for="showSubscribers">Mostrar número de suscriptores</label>
+                                <label class="form-check-label text-white" for="showSubscribers">Show number of subscribers</label>
                             </div>
                             <div class="form-check form-switch mt-2">
                                 <input class="form-check-input" type="checkbox" id="showPosts">
-                                <label class="form-check-label text-white" for="showPosts">Mostrar número de publicaciones</label>
+                                <label class="form-check-label text-white" for="showPosts">Show number of publications</label>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="membershipTierDescription" class="form-label mysecret-form-label">Descripción General de Membresías</label>
-                            <textarea class="form-control mysecret-form-control" id="membershipTierDescription" rows="3" placeholder="Describe los beneficios generales de tus niveles de membresía.">Ofrezco acceso anticipado a contenido exclusivo y tutoriales personalizados para mis suscriptores.</textarea>
-                            <small class="form-text text-muted">Esta es una descripción general. Los detalles de cada nivel se configuran abajo.</small>
+                            <label for="membershipTierDescription" class="form-label mysecret-form-label">General Membership Description</label>
+                            <textarea class="form-control mysecret-form-control" id="membershipTierDescription" rows="3" placeholder="Describe the general benefits of your membership tiers.">I offer early access to exclusive content and personalized tutorials for my subscribers.</textarea>
+                            <small class="form-text text-muted">This is a general description. The details of each tier are configured below.</small>
                         </div>
                     </div>
                 </div>
@@ -295,37 +295,37 @@
 
             <div class="row justify-content-center mt-4 mb-4">
                 <div class="col-lg-8"> <div class="card mysecret-setting-card h-100 p-4">
-                        <h5 class="mysecret-form-label mb-3">Configuración de Niveles de Suscripción</h5>
-                        <p class="text-white-50">Define tus niveles de suscripción: **Bronce**, **Plata** y **Oro**. Puedes tener hasta tres.</p>
+                        <h5 class="mysecret-form-label mb-3">Subscription Level Settings</h5>
+                        <p class="text-white-50">Define your subscription levels: **Bronze**, **Silver** and **Gold**. You can have up to three.</p>
                         
                         <div id="subscriptionLevelsContainer">
                             <div class="mysecret-subscription-level-card mb-3" data-level-name="Bronce">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h6 class="mysecret-form-label mb-0">Nivel Bronce</h6>
-                                    <button type="button" class="btn-close btn-close-white remove-level-btn d-none" aria-label="Remover"></button>
+                                    <h6 class="mysecret-form-label mb-0">Bronze Level</h6>
+                                    <button type="button" class="btn-close btn-close-white remove-level-btn d-none" aria-label="Remove"></button>
                                 </div>
                                 <input type="hidden" name="level_name[]" value="Bronce">
                                 <div class="mb-3">
-                                    <label for="bronzePrice" class="form-label mysecret-form-label">Precio Mensual ($)</label>
+                                    <label for="bronzePrice" class="form-label mysecret-form-label">Monthly Price ($)</label>
                                     <input type="number" class="form-control mysecret-form-control" id="bronzePrice" name="level_price[]" step="0.01" min="0" value="5.00" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="bronzeBenefits" class="form-label mysecret-form-label">Beneficios</label>
-                                    <textarea class="form-control mysecret-form-control" id="bronzeBenefits" name="level_benefits[]" rows="3" placeholder="Ej: Acceso a 2 publicaciones exclusivas al mes" required>Acceso a todas las publicaciones generales.</textarea>
+                                    <label for="bronzeBenefits" class="form-label mysecret-form-label">Benefits</label>
+                                    <textarea class="form-control mysecret-form-control" id="bronzeBenefits" name="level_benefits[]" rows="3" placeholder="e.g.: Access to 2 exclusive posts per month" required>Access to all general publications.</textarea>
                                 </div>
                             </div>
                             </div>
 
                         <button type="button" id="addSubscriptionLevelBtn" class="btn mysecret-btn-outline mt-3">
-                            <i class="bi bi-plus-circle me-2"></i>Añadir Nivel de Suscripción
+                            <i class="bi bi-plus-circle me-2"></i>Add Subscription Level
                         </button>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-5">
-                <button type="submit" class="btn mysecret-btn-outline btn-lg me-3"><i class="bi bi-save me-2"></i>Guardar Cambios</button>
-                <a href="creator_profile.php" class="btn btn-secondary btn-lg"><i class="bi bi-x-circle me-2"></i>Cancelar</a>
+                <button type="submit" class="btn mysecret-btn-outline btn-lg me-3"><i class="bi bi-save me-2"></i>Save Changes</button>
+                <a href="creator_profile.php" class="btn btn-secondary btn-lg"><i class="bi bi-x-circle me-2"></i>Cancel</a>
             </div>
         </form>
     </main>
@@ -333,7 +333,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const levels = ['Bronce', 'Plata', 'Oro'];
+            const levels = ['Bronze', 'Silver', 'Gold'];
             const subscriptionLevelsContainer = document.getElementById('subscriptionLevelsContainer');
             const addSubscriptionLevelBtn = document.getElementById('addSubscriptionLevelBtn');
             let currentLevelCount = 1; // Start with Bronze
@@ -345,17 +345,17 @@
                 card.setAttribute('data-level-name', levelName);
                 card.innerHTML = `
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h6 class="mysecret-form-label mb-0">Nivel ${levelName}</h6>
-                        <button type="button" class="btn-close btn-close-white remove-level-btn" aria-label="Remover"></button>
+                        <h6 class="mysecret-form-label mb-0">${levelName} Level</h6>
+                        <button type="button" class="btn-close btn-close-white remove-level-btn" aria-label="Remove"></button>
                     </div>
                     <input type="hidden" name="level_name[]" value="${levelName}">
                     <div class="mb-3">
-                        <label for="${levelName.toLowerCase()}Price" class="form-label mysecret-form-label">Precio Mensual ($)</label>
+                        <label for="${levelName.toLowerCase()}Price" class="form-label mysecret-form-label">Monthly Price ($)</label>
                         <input type="number" class="form-control mysecret-form-control" id="${levelName.toLowerCase()}Price" name="level_price[]" step="0.01" min="0" required>
                     </div>
                     <div class="mb-3">
-                        <label for="${levelName.toLowerCase()}Benefits" class="form-label mysecret-form-label">Beneficios</label>
-                        <textarea class="form-control mysecret-form-control" id="${levelName.toLowerCase()}Benefits" name="level_benefits[]" rows="3" placeholder="Ej: Acceso a X publicaciones exclusivas al mes" required></textarea>
+                        <label for="${levelName.toLowerCase()}Benefits" class="form-label mysecret-form-label">Benefits</label>
+                        <textarea class="form-control mysecret-form-control" id="${levelName.toLowerCase()}Benefits" name="level_benefits[]" rows="3" placeholder="e.g.: Access to X exclusive posts per month" required></textarea>
                     </div>
                 `;
 
@@ -373,10 +373,10 @@
             function updateAddButtonState() {
                 if (currentLevelCount >= levels.length) { // Max 3 levels
                     addSubscriptionLevelBtn.disabled = true;
-                    addSubscriptionLevelBtn.textContent = 'Máximo de 3 niveles alcanzado';
+                    addSubscriptionLevelBtn.textContent = 'Maximum of 3 levels reached';
                 } else {
                     addSubscriptionLevelBtn.disabled = false;
-                    addSubscriptionLevelBtn.innerHTML = '<i class="bi bi-plus-circle me-2"></i>Añadir Nivel de Suscripción';
+                    addSubscriptionLevelBtn.innerHTML = '<i class="bi bi-plus-circle me-2"></i>Add Subscription Level';
                 }
             }
 

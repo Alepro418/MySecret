@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../public/assets/images/logo v1.3.ico" type="image/x-icon">
-    <title>MySecret - Donde tu fantasía es nuestra Realidad</title>
+    <title>MySecret - Where your fantasy is our reality</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -232,7 +232,7 @@
                         <a class="nav-link mysecret-nav-link" href="messages_creator.php"><i class="bi bi-envelope-fill me-2"></i>Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>notifications</a>
+                        <a class="nav-link mysecret-nav-link" href="notifications.php"><i class="bi bi-bell-fill me-2"></i>Notifications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mysecret-nav-link active" href="creator_profile.php"><i class="bi bi-person-circle me-2"></i>My Profile</a>
@@ -252,31 +252,31 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Descargar Mis Datos</h1>
-            <p class="lead mysecret-subtitle">Solicita una copia de la información que has compartido con MySecret.</p>
+            <h1 class="display-3 mysecret-title">Download My Data</h1>
+            <p class="lead mysecret-subtitle">Request a copy of the information you have shared with MySecret.</p>
         </div>
     </header>
 
     <main class="container my-5 py-3">
         <div class="mysecret-data-download-card">
             <i class="bi bi-download display-1 mysecret-gold mb-4"></i>
-            <h2>Solicitar Descarga de Datos</h2>
-            <p>En MySecret, valoramos tu privacidad y tu derecho a acceder a tus datos. Puedes solicitar una copia de toda la información personal que hemos recopilado sobre ti, incluyendo tus publicaciones, mensajes, historial de suscripciones y configuraciones de perfil.</p>
-            <p>Una vez que realices la solicitud, prepararemos un archivo con tus datos y te notificaremos por correo electrónico cuando esté listo para ser descargado de forma segura.</p>
-            <p class="text-muted small">El proceso puede tardar hasta 48 horas en completarse, dependiendo del volumen de tus datos.</p>
+            <h2>Request Data Download</h2>
+            <p>At MySecret, we value your privacy and your right to access your data. You can request a copy of all the personal information we have collected about you, including your posts, messages, subscription history, and profile settings.</p>
+            <p>Once you make the request, we will prepare a file with your data and notify you by email when it is ready to be securely downloaded.</p>
+            <p class="text-muted small">The process may take up to 48 hours to complete, depending on the volume of your data.</p>
             <button class="btn mysecret-btn-outline mt-4" onclick="requestDataDownload()">
-                <i class="bi bi-cloud-arrow-down-fill me-2"></i> Solicitar Descarga
+                <i class="bi bi-cloud-arrow-down-fill me-2"></i> Request Download
             </button>
         </div>
     </main>
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>
@@ -284,32 +284,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         function requestDataDownload() {
-            // Aquí iría la lógica para enviar la solicitud de descarga de datos al servidor.
-            // Esto probablemente implicaría una llamada AJAX (Fetch API o XMLHttpRequest) a un script PHP.
-            // Por ahora, solo mostraremos una alerta.
+            // Here would be the logic to send the data download request to the server.
+            // This would probably involve an AJAX call (Fetch API or XMLHttpRequest) to a PHP script.
+            // For now, we will just show an alert.
 
-            alert("Tu solicitud de descarga de datos ha sido enviada. Recibirás un correo electrónico cuando tus datos estén listos.");
+            alert("Your data download request has been sent. You will receive an email when your data is ready.");
             
-            // Ejemplo de cómo podrías hacer una llamada Fetch (requiere backend PHP):
+            // Example of how you could make a Fetch call (requires PHP backend):
             /*
             fetch('api/request_data_download.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ userId: 'TU_ID_DE_USUARIO' }), // Envía el ID del usuario o token
+                body: JSON.stringify({ userId: 'YOUR_USER_ID' }), // Sends the user ID or token
             })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert("Tu solicitud de descarga de datos ha sido enviada. Recibirás un correo electrónico cuando tus datos estén listos.");
+                    alert("Your data download request has been sent. You will receive an email when your data is ready.");
                 } else {
-                    alert("Hubo un error al procesar tu solicitud: " + data.message);
+                    alert("There was an error processing your request: " + data.message);
                 }
             })
             .catch((error) => {
                 console.error('Error:', error);
-                alert("Ocurrió un error de red. Inténtalo de nuevo más tarde.");
+                alert("A network error occurred. Please try again later.");
             });
             */
         }

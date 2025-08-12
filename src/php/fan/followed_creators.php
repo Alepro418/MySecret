@@ -200,8 +200,8 @@
 
     <header class="mysecret-profile-header">
         <div class="container">
-            <h1 class="display-3 mysecret-title">Perfil de Usuario</h1>
-            <p class="lead mysecret-subtitle">Administra tu perfil y explora tus conexiones.</p>
+            <h1 class="display-3 mysecret-title">Followed creators</h1>
+            <p class="lead mysecret-subtitle">Manage your profile and explore your conections.</p>
         </div>
     </header>
 
@@ -210,73 +210,73 @@
             <img src="Assets/user.jpeg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
             <h2 class="mt-3 mb-1 mysecret-section-title">Juanito Alcachofa <i class="bi bi-user mysecret-gold ms-2"></i></h2>
             <p class="text-muted">@juanitoalcachofa</p>
-            <p class="lead mysecret-card-text">Bienvenido a tu panel de usuario. Aquí puedes gestionar tu actividad.</p>
-            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Editar Perfil</button>
+            <p class="lead mysecret-card-text">Welcome to your panel of user. Here you manage your activity.</p>
+            <button class="btn mysecret-btn-outline mt-3"><i class="bi bi-pencil-square me-2"></i>Edit Profile</button>
         </div>
 
         <hr class="m5 mysecret-divider">
 
         <section class="mb-5">
-            <h2 class="text-center mb-4 mysecret-section-title">Creadores Seguidos</h2>
+            <h2 class="text-center mb-4 mysecret-section-title">Followed creators</h2>
             <div class="list-group mysecret-creator-list">
                 <div class="list-group-item">
                     <div class="d-flex align-items-center">
                         <img src="https://via.placeholder.com/60/FFC107/FFFFFF?text=CM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Chef María</h5>
+                            <h5 class="mb-1 mysecret-gold">Chef Maria</h5>
                             <p class="mb-0 text-muted">@ChefMariaOficial</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active membership</span>
                         </div>
                     </div>
-                    <a href="#" class="btn mysecret-btn-primary">Ver Perfil</a>
+                    <a href="#" class="btn mysecret-btn-primary">View Profile</a>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center">
                         <img src="https://via.placeholder.com/60/20c997/FFFFFF?text=JD" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Juan Diseño</h5>
-                            <p class="mb-0 text-muted">@JuanDisenoArt</p>
-                            <span class="mysecret-membership-status mysecret-membership-expired">Membresía Expirada</span>
+                            <h5 class="mb-1 mysecret-gold">Jhon Design</h5>
+                            <p class="mb-0 text-muted">@JhonDesignArt</p>
+                            <span class="mysecret-membership-status mysecret-membership-expired">Membership Expired</span>
                         </div>
                     </div>
-                    <a href="#" class="btn mysecret-btn-primary">Ver Perfil</a>
+                    <a href="#" class="btn mysecret-btn-primary">View Profile</a>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center">
                         <img src="https://via.placeholder.com/60/007bff/FFFFFF?text=PG" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Profe Genio</h5>
-                            <p class="mb-0 text-muted">@ProfeGenio</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <h5 class="mb-1 mysecret-gold">Professor Genius</h5>
+                            <p class="mb-0 text-muted">@ProfeGenius</p>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active Membership</span>
                         </div>
                     </div>
-                    <a href="#" class="btn mysecret-btn-primary">Ver Perfil</a>
+                    <a href="#" class="btn mysecret-btn-primary">View Profile</a>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center">
                         <img src="https://via.placeholder.com/60/fd7e14/FFFFFF?text=LM" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Luna Música</h5>
+                            <h5 class="mb-1 mysecret-gold">Moon Music</h5>
                             <p class="mb-0 text-muted">@LunaMusica</p>
-                            <span class="mysecret-membership-status mysecret-membership-expired">Membresía Expirada</span>
+                            <span class="mysecret-membership-status mysecret-membership-expired">Membership Expired</span>
                         </div>
                     </div>
-                    <a href="#" class="btn mysecret-btn-primary">Ver Perfil</a>
+                    <a href="#" class="btn mysecret-btn-primary">View Profile</a>
                 </div>
 
                 <div class="list-group-item">
                     <div class="d-flex align-items-center">
                         <img src="https://via.placeholder.com/60/6f42c1/FFFFFF?text=EA" alt="Creator Avatar" class="mysecret-creator-avatar">
                         <div>
-                            <h5 class="mb-1 mysecret-gold">Explora Aventuras</h5>
+                            <h5 class="mb-1 mysecret-gold">Explore Adventures</h5>
                             <p class="mb-0 text-muted">@ExploraAventuras</p>
-                            <span class="mysecret-membership-status mysecret-membership-active">Membresía Activa</span>
+                            <span class="mysecret-membership-status mysecret-membership-active">Active Membership</span>
                         </div>
                     </div>
-                    <a href="#" class="btn mysecret-btn-primary">Ver Perfil</a>
+                    <a href="#" class="btn mysecret-btn-primary">View Profile</a>
                 </div>
             </div>
         </section>
@@ -285,11 +285,11 @@
 
     <footer class="mysecret-footer py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-2">&copy; 2025 MySecret. Todos los derechos reservados.</p>
+            <p class="mb-2">&copy; 2025 MySecret. All rights reserved.</p>
             <ul class="list-inline mb-0">
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Términos de Servicio</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Política de Privacidad</a></li>
-                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contacto</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="mysecret-footer-link">Contact</a></li>
             </ul>
         </div>
     </footer>
