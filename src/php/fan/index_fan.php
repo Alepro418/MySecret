@@ -1,7 +1,7 @@
 <?php
 session_start();
 // The path to your login page, adjust if necessary
-$login_page_url = '../../../public/sign_in.php'; 
+$login_page_url = '../../../public/sign_in.php';
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: " . $login_page_url);
@@ -109,18 +109,31 @@ if (!isset($_SESSION['user_id'])) {
             box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
             color: white;
         }
-        /* Class for the like button when active */
-        .btn-like-active {
-            background-color: #ffd700; /* Gold color */
-            border-color: #ffd700;
-         color: #343a40; /* Text color for contrast */
+        /* Floating Button Styles */
+        .floating-button {
+            position: fixed; /* Makes the button float */
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            right: 40px; /* Distance from the right of the viewport */
+            z-index: 1000; /* Ensures the button is above other content */
+            border-radius: 50px; /* Makes it a pill shape */
+            padding: 10px 20px; /* Adjust padding as needed */
+            font-size: 1rem; /* Adjust font size as needed */
+            background-color: #ffc107; /* Gold color, matching your theme */
+            color: #212529; /* Dark text for contrast */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+            text-decoration: none; /* Remove underline for link */
+            display: flex; /* For icon and text alignment */
+            align-items: center; /* Vertically align icon and text */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
         }
 
-        /* Optional: Hover style */
-        .btn-like-active:hover {
-            background-color: #e6c200; /* A slightly darker tone */
-            border-color: #e6c200;
-            color: #343a40;
+        .floating-button:hover {
+            background-color: #e0a800; /* Slightly darker gold on hover */
+            color: #212529; /* Maintain dark text color on hover */
+        }
+
+        .floating-button i {
+            margin-right: 8px; /* Space between icon and text */
         }
     </style>
 </head>
@@ -163,7 +176,6 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
     </nav>
-
     <header class="mysecret-hero text-center d-flex align-items-center justify-content-center">
         <div class="container text-white">
             <h1 class="display-3 mb-4 mysecret-title">Welcome to MySecret</h1>
@@ -171,56 +183,11 @@ if (!isset($_SESSION['user_id'])) {
             <a href="explore_creators.php" class="btn mysecret-btn-primary btn-lg"><i class="bi bi-search me-2"></i>Explore now</a>
         </div>
     </header>
-
     <main class="container my-5 py-3">
         <section class="mb-5">
             <h2 class="text-center mb-4 mysecret-section-title">Your exclusive feed</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_1.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
-                        <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">Exclusive Post Title</h5>
-                            <p class="card-text mysecret-card-text small">By: Aisha Sofey <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">This is a snippet of the exclusive content you are subscribed to. Enjoy it!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="view_post.php?id=123" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>View Content</a>
-                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 150 <i class="bi bi-chat-fill ms-3 me-1"></i> 25</small>
-                            </div>
-                        </div>
-                    </div>
+            <div id="content-feed" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 </div>
-                <div class="col">
-                    <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_2.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
-                        <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">New Vlog: My Shooting Day</h5>
-                            <p class="card-text mysecret-card-text small">By: Sophie Rain <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">See what happens behind the scenes in my latest project!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn mysecret-btn-outline view-content-btn" data-bs-toggle="modal" data-bs-target="#contentModal" data-content-id="124">
-                                    <i class="bi bi-play-circle-fill me-2"></i>watch video 
-                                </button>
-                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 210 <i class="bi bi-chat-fill ms-3 me-1"></i> 40</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mysecret-card h-100">
-                        <img src="Assets/content_post_3.jpg" class="card-img-top mysecret-card-img" alt="Exclusive Post">
-                        <div class="card-body">
-                            <h5 class="card-title mysecret-card-title">Exclusive Photo: Golden Hour</h5>
-                            <p class="card-text mysecret-card-text small">By: Bella Thorne <i class="bi bi-patch-check-fill mysecret-gold ms-1"></i></p>
-                            <p class="card-text">A special moment just for my subscribers. Hope you like it!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="view_post.php?id=125" class="btn mysecret-btn-outline"><i class="bi bi-eye-fill me-2"></i>View Content</a>
-                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 320 <i class="bi bi-chat-fill ms-3 me-1"></i> 55</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <hr class="m5 mysecret-divider">
@@ -307,7 +274,7 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </section>
     </main>
-    
+
     <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content mysecret-card">
@@ -337,77 +304,117 @@ if (!isset($_SESSION['user_id'])) {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        // Esperar a que el documento esté completamente cargado
-document.addEventListener('DOMContentLoaded', function() {
-    const contentModal = document.getElementById('contentModal');
-    
-    // Escuchar el evento de que el modal se va a mostrar
-    contentModal.addEventListener('show.bs.modal', function (event) {
-        // Obtener el botón que disparó el modal
-        const button = event.relatedTarget;
-        // Extraer el ID del contenido del atributo 'data-content-id'
-        const contentId = button.getAttribute('data-content-id');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Script para cargar el feed de contenido dinámicamente
+            const contentFeed = document.getElementById('content-feed');
 
-        // Referencias a elementos dentro del modal
-        const modalTitle = contentModal.querySelector('.modal-title');
-        const contentPlaceholder = document.getElementById('content-placeholder');
+            fetch('../../processes/fetch_all_content.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success' && data.data.length > 0) {
+                        data.data.forEach(content => {
+                            let mediaHtml = '';
+                            let actionButton = '';
+                            
+                            // Determinar el HTML para el tipo de contenido y el botón de acción
+                            if (content.type_content === 'image') {
+                                mediaHtml = `<img src="${content.url_file}" class="card-img-top mysecret-card-img" alt="${content.title}">`;
+                                actionButton = `<a href="#" class="btn mysecret-btn-outline view-content-btn" data-bs-toggle="modal" data-bs-target="#contentModal" data-content-id="${content.id_content}">
+                                                    <i class="bi bi-eye-fill me-2"></i>Ver Imagen
+                                                </a>`;
+                            } else if (content.type_content === 'video') {
+                                mediaHtml = `<video controls class="card-img-top mysecret-card-img" src="${content.url_file}"></video>`;
+                                actionButton = `<a href="#" class="btn mysecret-btn-outline view-content-btn" data-bs-toggle="modal" data-bs-target="#contentModal" data-content-id="${content.id_content}">
+                                                    <i class="bi bi-play-circle-fill me-2"></i>Watch Video
+                                                </a>`;
+                            }
 
-        // Limpiar el contenido anterior y mostrar el mensaje de carga
-        contentPlaceholder.innerHTML = '<p class="text-muted">Cargando contenido...</p>';
-        modalTitle.textContent = 'Cargando...';
+                            const cardHtml = `
+                                <div class="col">
+                                    <div class="card mysecret-card h-100">
+                                        ${mediaHtml}
+                                        <div class="card-body">
+                                            <h5 class="card-title mysecret-card-title">${content.title}</h5>
+                                            <p class="card-text mysecret-card-text small">Por: ${content.creator_name}</p>
+                                            <p class="card-text">${content.description}</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                ${actionButton}
+                                                <small class="text-muted"><i class="bi bi-heart-fill me-1"></i> 0 <i class="bi bi-chat-fill ms-3 me-1"></i> 0</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            contentFeed.innerHTML += cardHtml;
+                        });
 
-        // Realizar la petición fetch al script PHP
-        fetch(`../../processes/fetch_content.php?id_content=${contentId}`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error en la respuesta del servidor.');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.status === 'success') {
-                    const content = data.data;
-                    modalTitle.textContent = content.title;
-
-                    let contentHtml = '';
-                    switch (content.type_content) {
-                        case 'video':
-                            contentHtml = `<video controls class="img-fluid" src="${content.url_file}"></video>`;
-                            break;
-                        case 'image':
-                            contentHtml = `<img src="${content.url_file}" class="img-fluid" alt="${content.title}">`;
-                            break;
-                        // Añade más casos para otros tipos de contenido si es necesario
-                        default:
-                            contentHtml = `<p>Tipo de contenido no soportado.</p>`;
-                            break;
+                    } else {
+                        contentFeed.innerHTML = '<p class="text-center text-muted">No hay contenido exclusivo disponible en este momento.</p>';
                     }
+                })
+                .catch(error => {
+                    console.error('Error al cargar el contenido:', error);
+                    contentFeed.innerHTML = '<p class="text-center text-danger">Error al cargar el contenido.</p>';
+                });
 
-                    contentPlaceholder.innerHTML = contentHtml;
+            // Script para manejar el modal de contenido
+            const contentModal = document.getElementById('contentModal');
+            contentModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const contentId = button.getAttribute('data-content-id');
 
-                } else {
-                    modalTitle.textContent = "Error";
-                    contentPlaceholder.innerHTML = `<p class="text-danger">${data.message}</p>`;
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                modalTitle.textContent = "Error";
-                contentPlaceholder.innerHTML = `<p class="text-danger">No se pudo cargar el contenido. Por favor, inténtalo de nuevo.</p>`;
+                const modalTitle = contentModal.querySelector('.modal-title');
+                const contentPlaceholder = document.getElementById('content-placeholder');
+
+                contentPlaceholder.innerHTML = '<div class="spinner-border text-warning" role="status"><span class="visually-hidden">Cargando...</span></div>';
+                modalTitle.textContent = 'Cargando...';
+
+                fetch(`../../processes/fetch_content.php?id_content=${contentId}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Error en la respuesta del servidor.');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.status === 'success') {
+                            const content = data.data;
+                            modalTitle.textContent = content.title;
+                            let contentHtml = '';
+                            switch (content.type_content) {
+                                case 'video':
+                                    contentHtml = `<video controls class="img-fluid" src="${content.url_file}"></video>`;
+                                    break;
+                                case 'image':
+                                    contentHtml = `<img src="${content.url_file}" class="img-fluid" alt="${content.title}">`;
+                                    break;
+                                default:
+                                    contentHtml = `<p>Tipo de contenido no soportado.</p>`;
+                                    break;
+                            }
+                            contentPlaceholder.innerHTML = contentHtml;
+                        } else {
+                            modalTitle.textContent = "Error";
+                            contentPlaceholder.innerHTML = `<p class="text-danger">${data.message}</p>`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        modalTitle.textContent = "Error";
+                        contentPlaceholder.innerHTML = `<p class="text-danger">No se pudo cargar el contenido. Por favor, inténtalo de nuevo.</p>`;
+                    });
             });
-    });
 
-    // Escuchar el evento de que el modal se va a ocultar
-    contentModal.addEventListener('hide.bs.modal', function () {
-        const contentPlaceholder = document.getElementById('content-placeholder');
-        // Pausar cualquier video o audio que se esté reproduciendo
-        const media = contentPlaceholder.querySelector('video, audio');
-        if (media) {
-            media.pause();
-            media.currentTime = 0; // Opcional: reiniciar el video
-        }
-    });
-});
+            // Escuchar el evento de que el modal se va a ocultar
+            contentModal.addEventListener('hide.bs.modal', function () {
+                const contentPlaceholder = document.getElementById('content-placeholder');
+                const media = contentPlaceholder.querySelector('video, audio');
+                if (media) {
+                    media.pause();
+                    media.currentTime = 0;
+                }
+            });
+        });
     </script>
 </body>
 </html>

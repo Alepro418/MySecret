@@ -1,4 +1,15 @@
 <!-- Index file for the creators of content -->
+ <?php
+// Iniciar la sesión para acceder a los mensajes de éxito/error
+session_start();
+
+// Validar que la sesión del creador esté activa
+if (!isset($_SESSION['user_id']) || $_SESSION['type_user'] !== 'creator') {
+    // Redirigir si no es un creador o no ha iniciado sesión
+    header("Location: ../../../public/sign_in.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,7 +177,7 @@
         <div class="col-lg-8 col-md-10">
             <div class="card mysecret-card p-4">
                 <div class="card-body">
-                    <form action="upload_content.php" method="POST" enctype="multipart/form-data">
+                    <form action="../../processes/upload_content.php" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="contentTitle" class="form-label mysecret-form-label">Content Title</label>
                             <input type="text" class="form-control mysecret-form-control" id="contentTitle" name="contentTitle" required>

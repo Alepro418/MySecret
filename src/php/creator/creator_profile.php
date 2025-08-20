@@ -1,3 +1,37 @@
+<?php
+// Asegúrate de iniciar la sesión antes de cualquier salida HTML
+session_start();
+
+// Este archivo debería contener la configuración y la conexión PDO
+include("../../processes/db_config.php");
+
+// 2. Obtener el ID del usuario de la sesión
+// Cambia 'id_user' por 'id_users' para que coincida con la base de datos
+if (isset($_SESSION['id_users'])) {
+    $id_users = $_SESSION['id_users'];
+
+    // 3. Preparar y ejecutar la consulta SQL
+    $sql = "SELECT username FROM users WHERE id_users = :id_users";
+    $stmt = $conn->prepare($sql);
+    // Vincula la variable $user_id al marcador de posición :id_users
+    $stmt->bindParam(':id_users', $id_users, PDO::PARAM_INT);
+    $stmt->execute();
+
+    // 4. Obtener el resultado
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // 5. Asignar el nombre de usuario a una variable
+    if ($user) {
+        $username = $user['username'];
+    } else {
+        // Manejar el caso de que el usuario no se encuentre
+        $username = 'Usuario Desconocido';
+    }
+} else {
+    // Manejar el caso de que no haya sesión de usuario
+    $username = 'Sesión no iniciada';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -176,8 +210,8 @@
     <main class="container my-5 py-3">
         <div class="text-center mb-5">
             <img src="Assets/Test_1.jpg" alt="Creator Avatar" class="mysecret-profile-avatar img-fluid">
-            <h2 class="mt-3 mb-1 mysecret-section-title">Aisha Sofey <i class="bi bi-gem mysecret-gold ms-2"></i></h2>
-            <p class="text-muted">@aishasofeyofficial</p>
+            <h2 class="mt-3 mb-1 mysecret-section-title"><?php echo htmlspecialchars($username); ?> <i class="bi bi-gem mysecret-gold ms-2"></i></h2>
+            <p class="text-muted">@<?php echo htmlspecialchars($username); ?></p>
             <p class="lead mysecret-card-text">"My names Aishah, your tiny little Asian waifu with really big legs 😣
                 I’ll be showing you whatever you want as long as you’re nice to me 💕
                 SHOWING EVERYTHING JUST FOR YOU 😉"</p>
